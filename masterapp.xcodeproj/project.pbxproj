@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1324A8011A14516500262C7C /* people.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1324A8001A14516500262C7C /* people.storyboard */; };
 		13369DAD1A0D72F7000F9032 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13369DAC1A0D72F7000F9032 /* AppDelegate.swift */; };
 		13369DB01A0D72F7000F9032 /* masterapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 13369DAE1A0D72F7000F9032 /* masterapp.xcdatamodeld */; };
 		13369DB21A0D72F7000F9032 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13369DB11A0D72F7000F9032 /* ViewController.swift */; };
@@ -22,10 +23,9 @@
 		13F1E5561A13F9A400EB08AA /* MuseoSans_900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E5511A13F9A400EB08AA /* MuseoSans_900.otf */; };
 		13F1E5571A13F9A400EB08AA /* MuseoSans-100.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E5521A13F9A400EB08AA /* MuseoSans-100.otf */; };
 		13F1E5581A13F9A400EB08AA /* MuseoSans-300.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E5531A13F9A400EB08AA /* MuseoSans-300.otf */; };
-		13F1E55D1A14183700EB08AA /* profileStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E55C1A14183700EB08AA /* profileStoryboard.storyboard */; };
 		13F1E55F1A14193F00EB08AA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F1E55E1A14193F00EB08AA /* ProfileViewController.swift */; };
 		13F1E5611A143BE300EB08AA /* SegueUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F1E5601A143BE300EB08AA /* SegueUtils.swift */; };
-		13F1E5631A144BF700EB08AA /* homeSegueStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E5621A144BF700EB08AA /* homeSegueStoryboard.storyboard */; };
+		13F1E5631A144BF700EB08AA /* home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E5621A144BF700EB08AA /* home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1324A8001A14516500262C7C /* people.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = people.storyboard; sourceTree = "<group>"; };
 		13369DA71A0D72F7000F9032 /* masterapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = masterapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13369DAB1A0D72F7000F9032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13369DAC1A0D72F7000F9032 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,10 +59,9 @@
 		13F1E5511A13F9A400EB08AA /* MuseoSans_900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_900.otf; sourceTree = "<group>"; };
 		13F1E5521A13F9A400EB08AA /* MuseoSans-100.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-100.otf"; sourceTree = "<group>"; };
 		13F1E5531A13F9A400EB08AA /* MuseoSans-300.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-300.otf"; sourceTree = "<group>"; };
-		13F1E55C1A14183700EB08AA /* profileStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = profileStoryboard.storyboard; sourceTree = "<group>"; };
 		13F1E55E1A14193F00EB08AA /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		13F1E5601A143BE300EB08AA /* SegueUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueUtils.swift; sourceTree = "<group>"; };
-		13F1E5621A144BF700EB08AA /* homeSegueStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = homeSegueStoryboard.storyboard; sourceTree = "<group>"; };
+		13F1E5621A144BF700EB08AA /* home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = home.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1324A7FF1A14511800262C7C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				13F1E5621A144BF700EB08AA /* home.storyboard */,
+				1324A8001A14516500262C7C /* people.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 		13369D9E1A0D72F7000F9032 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +112,7 @@
 		13369DA91A0D72F7000F9032 /* masterapp */ = {
 			isa = PBXGroup;
 			children = (
+				1324A7FF1A14511800262C7C /* Storyboards */,
 				13F1E54D1A13F98500EB08AA /* Resources */,
 				139B16091A12F4BB0014AF49 /* MasterSegue.swift */,
 				13A1D5E31A12B8A500D110FB /* Utils */,
@@ -114,8 +124,6 @@
 				13369DAE1A0D72F7000F9032 /* masterapp.xcdatamodeld */,
 				13369DAA1A0D72F7000F9032 /* Supporting Files */,
 				13A1D5E11A12A93C00D110FB /* MenuViewController.swift */,
-				13F1E55C1A14183700EB08AA /* profileStoryboard.storyboard */,
-				13F1E5621A144BF700EB08AA /* homeSegueStoryboard.storyboard */,
 				13F1E55E1A14193F00EB08AA /* ProfileViewController.swift */,
 			);
 			path = masterapp;
@@ -259,11 +267,11 @@
 				13F1E5571A13F9A400EB08AA /* MuseoSans-100.otf in Resources */,
 				13F1E5561A13F9A400EB08AA /* MuseoSans_900.otf in Resources */,
 				13369DB51A0D72F7000F9032 /* Main.storyboard in Resources */,
+				1324A8011A14516500262C7C /* people.storyboard in Resources */,
 				13F1E5551A13F9A400EB08AA /* MuseoSans_700.otf in Resources */,
 				13369DBA1A0D72F7000F9032 /* LaunchScreen.xib in Resources */,
 				13F1E5541A13F9A400EB08AA /* MuseoSans_500.otf in Resources */,
-				13F1E5631A144BF700EB08AA /* homeSegueStoryboard.storyboard in Resources */,
-				13F1E55D1A14183700EB08AA /* profileStoryboard.storyboard in Resources */,
+				13F1E5631A144BF700EB08AA /* home.storyboard in Resources */,
 				13F1E5581A13F9A400EB08AA /* MuseoSans-300.otf in Resources */,
 				13369DB71A0D72F7000F9032 /* Images.xcassets in Resources */,
 			);
@@ -417,6 +425,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMPRESS_PNG_FILES = NO;
 				INFOPLIST_FILE = masterapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -428,6 +437,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMPRESS_PNG_FILES = NO;
 				INFOPLIST_FILE = masterapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

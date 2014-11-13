@@ -20,8 +20,9 @@ class MasterSegue: UIStoryboardSegue {
         
       
 var mainView: UIStoryboard!
-mainView = UIStoryboard(name: theID, bundle: nil)
-let viewcontroller : UIViewController = mainView.instantiateInitialViewController() as UIViewController
+        mainView = UIStoryboard(name: theID, bundle: nil)
+       tabBarController.currentViewController =  mainView.instantiateInitialViewController() as UIViewController
+        let viewcontroller : UIViewController =  tabBarController.currentViewController!
 
 
         
@@ -30,12 +31,12 @@ let viewcontroller : UIViewController = mainView.instantiateInitialViewControlle
         }
         
         // Add view to placeholder view
-        tabBarController.currentViewController = destinationController
+       // tabBarController.currentViewController = destinationController
        // tabBarController.placeholderView.addSubview(destinationController.view)
         tabBarController.placeholderView.addSubview(viewcontroller.view)
-
-        
+       
         // Set autoresizing
+      
         tabBarController.placeholderView.setTranslatesAutoresizingMaskIntoConstraints(false)
         destinationController.view.setTranslatesAutoresizingMaskIntoConstraints(false)
         
@@ -48,7 +49,7 @@ let viewcontroller : UIViewController = mainView.instantiateInitialViewControlle
       //  let verticalConstraint = NSLayoutConstraint.constraintsWithVisualFormat("V:|-0-[v1]-0-|", options: .AlignAllTop, metrics: nil, views: ["v1": destinationController.view])
         let verticalConstraint = NSLayoutConstraint.constraintsWithVisualFormat("V:|-0-[v1]-0-|", options: .AlignAllTop, metrics: nil, views: ["v1": viewcontroller.view])
         tabBarController.placeholderView.addConstraints(verticalConstraint)
-      
+     
         tabBarController.placeholderView.layoutIfNeeded()
         //destinationController.didMoveToParentViewController(tabBarController)
         viewcontroller.didMoveToParentViewController(tabBarController)

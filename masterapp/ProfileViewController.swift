@@ -10,6 +10,9 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    @IBAction func test(sender: AnyObject) {
+        println("hit")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

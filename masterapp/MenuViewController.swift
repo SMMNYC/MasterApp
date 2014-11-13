@@ -42,13 +42,13 @@ let tableData = ["Home","Profile","Schedule", "Book A Room", "People", "Maps", "
         
         var cell = tableView.dequeueReusableCellWithIdentifier("MenuCell") as? UITableViewCell
         
-        cell?.textLabel?.text = tableData[indexPath.row]
+        cell?.textLabel.text = tableData[indexPath.row]
          // cell?.textLabel?.font = UIFont (name: "MuseoSans_500", size: 100)       // var imageName = UIImage(named: tableDatatableDatatableData[indexPath.row])
-       cell?.textLabel?.font = UIFont (name: "MuseoSans-300", size: 18)
+       cell?.textLabel.font = UIFont (name: "MuseoSans-300", size: 18)
         var cellName = tableData[indexPath.row]
         var iconName = getIconName(cellName)
          var imageName = UIImage(named:iconName)
-        cell?.imageView?.image = imageName
+        cell?.imageView.image = imageName
        
         return cell!
     }

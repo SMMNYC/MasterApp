@@ -13,10 +13,11 @@ class ViewController: UIViewController, MenuViewControllerDelegate {
      var expanded=false
    var currentViewController: UIViewController?
     var leadingConstraint: NSLayoutConstraint!
-    var availableIdentifiers = ["homeSegue","profileSegue", "scheduleSegue", "peopleSegue"]
+    var availableIdentifiers = ["home","profile", "schedule", "people"]
     @IBOutlet weak var placeholderView: UIView!
      //@IBOutlet weak var leadingConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var contentContainer: UIView!
      @IBOutlet weak var menuViewContainer: UIView!
     @IBAction func menuButtonPress(sender: AnyObject) {
       
@@ -48,7 +49,7 @@ class ViewController: UIViewController, MenuViewControllerDelegate {
         super.viewDidLoad()
        initPositionMenu()
        
-      loadStoryboard ("home")
+      loadStoryboard ("profile")
 
       // performSegueWithIdentifier("homeSegue", sender: nil)
         // Do any additional setup after loading the view, typically from a nib.
@@ -75,7 +76,7 @@ class ViewController: UIViewController, MenuViewControllerDelegate {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        if(contains(availableIdentifiers, segue.identifier)) {
+        if(contains(availableIdentifiers, segue.identifier!)) {
                        placeholderView.userInteractionEnabled=true
                     }
         if segue.identifier == "menuSegue"{
@@ -90,15 +91,33 @@ class ViewController: UIViewController, MenuViewControllerDelegate {
         
     }
     
+    func loadContainer (theBoard:String){
+        for view in contentContainer.subviews as [UIView] {
+            view.removeFromSuperview()
+        }
+        
+        
+        var mainView: UIStoryboard!
+        mainView = UIStoryboard(name: theBoard, bundle: nil)
+        var viewcontroller : UIViewController = mainView.instantiateInitialViewController() as UIViewController
+        currentViewController=viewcontroller
+        contentContainer.addSubview(viewcontroller.view)
+       viewcontroller.view.userInteractionEnabled=true
+        contentContainer.userInteractionEnabled=true
+         viewcontroller.didMoveToParentViewController(self)
+
+    }
+    
     func loadStoryboard (theBoard:String){
-        var theSegue = "\(theBoard.lowercaseString)Segue"
-        passId = "\(theSegue)Storyboard"
+        var theSegue = theBoard.lowercaseString
+        //loadContainer(theSegue)
+       //return
+        passId = theSegue
         var loadSegue="Segue1"
         if(contains(availableIdentifiers, theSegue)) {
             
             performSegueWithIdentifier(loadSegue, sender: nil)
-            //println("in Delegate \(theChoice)!")
-            
+                        
         }
 
     }

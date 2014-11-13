@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -42,6 +42,18 @@
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n5b-1M-ofo">
                                 <rect key="frame" x="0.0" y="59" width="600" height="541"/>
+                                <subviews>
+                                    <containerView contentMode="left" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jpd-8Q-EaC">
+                                        <rect key="frame" x="319" y="0.0" width="320" height="541"/>
+                                        <color key="backgroundColor" red="1" green="0.4755450517" blue="0.99712995780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="320" id="KsV-Rv-vB2"/>
+                                        </constraints>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="1" y="59" width="320" height="741"/>
+                                        </variation>
+                                    </containerView>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.91348656360000002" blue="0.068991819639999993" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FH7-BJ-Ci4">
@@ -124,6 +136,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="contentContainer" destination="jpd-8Q-EaC" id="mrZ-nP-kyL"/>
                         <outlet property="leadingConstraint" destination="RU6-zN-Hbc" id="ZvS-hO-aLb"/>
                         <outlet property="menuViewContainer" destination="1Bz-aC-eeb" id="Mx0-kp-REH"/>
                         <outlet property="placeholderView" destination="n5b-1M-ofo" id="YON-wZ-aeX"/>
