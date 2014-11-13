@@ -8,11 +8,19 @@
 
 import UIKit
 
+protocol MenuViewControllerDelegate{
+    func handleMenuChoice(controller: MenuViewController, theChoice:String)
+}
+
 class MenuViewController: UIViewController {
+      var delegate:MenuViewControllerDelegate? = nil
+    
 let tableData = ["Home","Profile","Schedule", "Book A Room", "People", "Maps", "Guides", "Learning", "Programs", "Catalog", "Forum","Community", "Feed", "Events"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // Do any additional setup after loading the view.
     }
@@ -35,27 +43,33 @@ let tableData = ["Home","Profile","Schedule", "Book A Room", "People", "Maps", "
         var cell = tableView.dequeueReusableCellWithIdentifier("MenuCell") as? UITableViewCell
         
         cell?.textLabel?.text = tableData[indexPath.row]
-        
-       // var imageName = UIImage(named: tableDatatableDatatableData[indexPath.row])
+         // cell?.textLabel?.font = UIFont (name: "MuseoSans_500", size: 100)       // var imageName = UIImage(named: tableDatatableDatatableData[indexPath.row])
+       cell?.textLabel?.font = UIFont (name: "MuseoSans-300", size: 18)
         var cellName = tableData[indexPath.row]
         var iconName = getIconName(cellName)
          var imageName = UIImage(named:iconName)
         cell?.imageView?.image = imageName
-        
+       
         return cell!
     }
 
-    
-    
-    let aString = "She was a soul stripper. She took my heart!"
-    let chars: [Character] = ["a", "e", "i"]
-
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var theSelection:String = tableData [indexPath.row]
+        println("You selected cell #\(theSelection)!")
+        if (delegate != nil) {
+            delegate!.handleMenuChoice(self, theChoice: theSelection)
+        }
+    }
+   
     func getIconName (cellName:String) ->String{
         var theName=cellName.lowercaseString
      
         theName  = theName.replace(" ", withString:"")
         return "\(theName)_icon"
         }
+    
+  
+
 
     /*
     // MARK: - Navigation
