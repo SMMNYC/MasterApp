@@ -47,7 +47,7 @@ var mainView: UIStoryboard!
         tabBarController.placeholderView.addConstraints(horizontalConstraint)
        
       //  let verticalConstraint = NSLayoutConstraint.constraintsWithVisualFormat("V:|-0-[v1]-0-|", options: .AlignAllTop, metrics: nil, views: ["v1": destinationController.view])
-        let verticalConstraint = NSLayoutConstraint.constraintsWithVisualFormat("V:|-0-[v1]-0-|", options: .AlignAllTop, metrics: nil, views: ["v1": viewcontroller.view])
+        let verticalConstraint = NSLayoutConstraint.constraintsWithVisualFormat("V:|-40-[v1]-0-|", options: .AlignAllTop, metrics: nil, views: ["v1": viewcontroller.view])
         tabBarController.placeholderView.addConstraints(verticalConstraint)
      
         tabBarController.placeholderView.layoutIfNeeded()

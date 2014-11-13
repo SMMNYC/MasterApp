@@ -15,6 +15,8 @@ class ViewController: UIViewController, MenuViewControllerDelegate {
     var leadingConstraint: NSLayoutConstraint!
     var availableIdentifiers = ["home","profile", "schedule", "people"]
     @IBOutlet weak var placeholderView: UIView!
+    
+    @IBOutlet weak var placeholderContainer: UIView!
      //@IBOutlet weak var leadingConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var contentContainer: UIView!
@@ -49,7 +51,7 @@ class ViewController: UIViewController, MenuViewControllerDelegate {
         super.viewDidLoad()
        initPositionMenu()
        
-      loadStoryboard ("profile")
+      loadStoryboard ("home")
 
       // performSegueWithIdentifier("homeSegue", sender: nil)
         // Do any additional setup after loading the view, typically from a nib.
@@ -92,6 +94,7 @@ class ViewController: UIViewController, MenuViewControllerDelegate {
     }
     
     func loadContainer (theBoard:String){
+        /*
         for view in contentContainer.subviews as [UIView] {
             view.removeFromSuperview()
         }
@@ -105,6 +108,32 @@ class ViewController: UIViewController, MenuViewControllerDelegate {
        viewcontroller.view.userInteractionEnabled=true
         contentContainer.userInteractionEnabled=true
          viewcontroller.didMoveToParentViewController(self)
+*/
+        
+        let tabBarController = self as ViewController
+        
+        var mainView: UIStoryboard!
+        mainView = UIStoryboard(name: theBoard, bundle: nil)
+        currentViewController =  mainView.instantiateInitialViewController() as UIViewController
+       
+        
+        
+        
+        for view in placeholderView.subviews as [UIView] {
+            view.removeFromSuperview()
+        }
+        
+        // Add view to placeholder view
+        // tabBarController.currentViewController = destinationController
+        // tabBarController.placeholderView.addSubview(destinationController.view)
+        placeholderContainer.addSubview(currentViewController!.view)
+        
+        // Set autoresizing
+     
+        
+        tabBarController.placeholderView.layoutIfNeeded()
+        //destinationController.didMoveToParentViewController(tabBarController)
+        currentViewController!.didMoveToParentViewController(self)
 
     }
     

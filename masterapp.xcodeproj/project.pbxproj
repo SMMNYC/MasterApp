@@ -18,6 +18,7 @@
 		139B160A1A12F4BB0014AF49 /* MasterSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139B16091A12F4BB0014AF49 /* MasterSegue.swift */; };
 		13A1D5E21A12A93C00D110FB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A1D5E11A12A93C00D110FB /* MenuViewController.swift */; };
 		13A1D5E51A12B8B600D110FB /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A1D5E41A12B8B600D110FB /* StringUtils.swift */; };
+		13E33C1C1A1533B5007B413B /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13E33C1B1A1533B4007B413B /* profile.storyboard */; };
 		13F1E5541A13F9A400EB08AA /* MuseoSans_500.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E54F1A13F9A400EB08AA /* MuseoSans_500.otf */; };
 		13F1E5551A13F9A400EB08AA /* MuseoSans_700.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E5501A13F9A400EB08AA /* MuseoSans_700.otf */; };
 		13F1E5561A13F9A400EB08AA /* MuseoSans_900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E5511A13F9A400EB08AA /* MuseoSans_900.otf */; };
@@ -54,6 +55,7 @@
 		139B16091A12F4BB0014AF49 /* MasterSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterSegue.swift; path = ../MasterSegue.swift; sourceTree = "<group>"; };
 		13A1D5E11A12A93C00D110FB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		13A1D5E41A12B8B600D110FB /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		13E33C1B1A1533B4007B413B /* profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
 		13F1E54F1A13F9A400EB08AA /* MuseoSans_500.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_500.otf; sourceTree = "<group>"; };
 		13F1E5501A13F9A400EB08AA /* MuseoSans_700.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_700.otf; sourceTree = "<group>"; };
 		13F1E5511A13F9A400EB08AA /* MuseoSans_900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_900.otf; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				13F1E5621A144BF700EB08AA /* home.storyboard */,
+				13E33C1B1A1533B4007B413B /* profile.storyboard */,
 				1324A8001A14516500262C7C /* people.storyboard */,
 			);
 			name = Storyboards;
@@ -266,6 +269,7 @@
 			files = (
 				13F1E5571A13F9A400EB08AA /* MuseoSans-100.otf in Resources */,
 				13F1E5561A13F9A400EB08AA /* MuseoSans_900.otf in Resources */,
+				13E33C1C1A1533B5007B413B /* profile.storyboard in Resources */,
 				13369DB51A0D72F7000F9032 /* Main.storyboard in Resources */,
 				1324A8011A14516500262C7C /* people.storyboard in Resources */,
 				13F1E5551A13F9A400EB08AA /* MuseoSans_700.otf in Resources */,
