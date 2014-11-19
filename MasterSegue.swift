@@ -17,24 +17,23 @@ class MasterSegue: UIStoryboardSegue {
     
     override func perform() {
         
-        let tabBarController = self.sourceViewController as ViewController
-        let destinationController = self.destinationViewController as UIViewController
+        let parentController = self.sourceViewController as ViewController
+    //db?
+        //  let destinationController = self.destinationViewController as UIViewController
         
         var mainView: UIStoryboard!
         mainView = UIStoryboard(name: theID.storyboard, bundle: nil)
-        tabBarController.currentViewController =  mainView.instantiateViewControllerWithIdentifier(theID.screen) as? UIViewController
-        let viewcontroller : UIViewController =  tabBarController.currentViewController!
-        
+        parentController.currentViewController =  mainView.instantiateViewControllerWithIdentifier(theID.screen) as? UIViewController
+        let viewcontroller : UIViewController =  parentController.currentViewController!
         let vc1 = viewcontroller as ContenteViewController
-        vc1.delegate = tabBarController
-        
+        vc1.delegate = parentController
         
         let inView = viewcontroller.view
 
-        tabBarController.placeholderView.hjrAddView(inView)
+        parentController.placeholderView.hjrAddView(inView)
     
-        
-        viewcontroller.didMoveToParentViewController(tabBarController)
+        //db?
+        //viewcontroller.didMoveToParentViewController(tabBarController)
         
     }
 

@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--Profile View Controller-->
+        <!--ProfileK View Controller-->
         <scene sceneID="IVe-dl-W4U">
             <objects>
-                <viewController storyboardIdentifier="entry" id="nQf-J9-49d" customClass="ProfileViewController" customModule="masterapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="entry" id="nQf-J9-49d" customClass="ProfileKViewController" customModule="masterapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="agk-2W-DPG"/>
                         <viewControllerLayoutGuide type="bottom" id="5FH-WE-vuC"/>
@@ -20,10 +20,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4mh-zf-Lab">
-                                        <rect key="frame" x="-7" y="-5" width="607" height="605"/>
+                                        <rect key="frame" x="-3" y="-5" width="607" height="605"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQq-cf-moL">
-                                                <rect key="frame" x="518" y="260" width="59" height="30"/>
+                                                <rect key="frame" x="518" y="28" width="59" height="30"/>
                                                 <state key="normal" title="Nav Test">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -31,33 +31,50 @@
                                                     <action selector="navTest:" destination="nQf-J9-49d" eventType="touchUpInside" id="W1M-Cv-qez"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grid 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2u-LL-xyh">
-                                                <rect key="frame" x="64" y="78" width="48" height="21"/>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmT-JE-Et1">
+                                                <rect key="frame" x="123" y="474" width="46" height="30"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="test:" destination="nQf-J9-49d" eventType="touchUpInside" id="B6k-1c-GAo"/>
+                                                </connections>
+                                            </button>
+                                            <view clipsSubviews="YES" contentMode="center" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c1j-qg-c1q" customClass="HJREmbedView" customModule="masterapp" customModuleProvider="target">
+                                                <rect key="frame" x="23" y="123" width="304" height="303"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="storyboard" value="Utility"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="screen" value="entry"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile from Storyboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYb-uz-Z6b">
+                                                <rect key="frame" x="42" y="47" width="179" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <view clipsSubviews="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GIi-8H-I8V" customClass="HJREmbedView" customModule="masterapp" customModuleProvider="target">
+                                                <rect key="frame" x="340" y="123" width="216" height="215"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="storyboard" value="Utility"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="screen" value="embed2"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.43874125670000003" green="0.83868781889999999" blue="0.3401523535" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="GQq-cf-moL" secondAttribute="trailing" constant="30" id="0Db-bj-hCB"/>
-                                            <constraint firstItem="C2u-LL-xyh" firstAttribute="leading" secondItem="4mh-zf-Lab" secondAttribute="leading" constant="64" id="6wf-7C-9A0"/>
-                                            <constraint firstItem="C2u-LL-xyh" firstAttribute="top" secondItem="4mh-zf-Lab" secondAttribute="top" constant="78" id="JNS-1e-urM"/>
                                             <constraint firstItem="GQq-cf-moL" firstAttribute="top" secondItem="4mh-zf-Lab" secondAttribute="top" constant="260" id="Ncj-KG-4iT"/>
+                                            <constraint firstAttribute="bottom" secondItem="c1j-qg-c1q" secondAttribute="bottom" constant="87" id="m1U-LV-1Fl"/>
+                                            <constraint firstItem="c1j-qg-c1q" firstAttribute="leading" secondItem="4mh-zf-Lab" secondAttribute="leading" constant="34" id="wxm-C8-cz8"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile from Storyboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYb-uz-Z6b">
-                                        <rect key="frame" x="405" y="195" width="179" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.56436697849999995" blue="0.096570631879999994" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="JYb-uz-Z6b" secondAttribute="trailing" constant="16" id="CQf-aa-x0G"/>
                                     <constraint firstAttribute="trailing" secondItem="4mh-zf-Lab" secondAttribute="trailing" id="Q0T-6M-kg2"/>
-                                    <constraint firstItem="JYb-uz-Z6b" firstAttribute="top" secondItem="zlH-zn-DjP" secondAttribute="top" constant="195" id="Qp4-0q-PcD"/>
                                     <constraint firstItem="4mh-zf-Lab" firstAttribute="leading" secondItem="zlH-zn-DjP" secondAttribute="leading" id="TvW-Mk-2UB"/>
                                     <constraint firstAttribute="bottom" secondItem="4mh-zf-Lab" secondAttribute="bottom" id="gEO-yA-aIz"/>
                                     <constraint firstItem="4mh-zf-Lab" firstAttribute="top" secondItem="zlH-zn-DjP" secondAttribute="top" id="kox-QH-9T2"/>
@@ -72,6 +89,12 @@
                             <constraint firstAttribute="trailing" secondItem="zlH-zn-DjP" secondAttribute="trailing" id="lFG-we-GhZ"/>
                         </constraints>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="viewLabel" value="Utility"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="profileHolder1" destination="c1j-qg-c1q" id="bf4-6M-QTO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LrB-NH-IYg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

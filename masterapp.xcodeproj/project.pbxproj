@@ -19,6 +19,8 @@
 		1371155A1A1BED2C008A71B9 /* Snappy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1371154D1A1BEBC5008A71B9 /* Snappy.framework */; };
 		1371155B1A1BED2C008A71B9 /* Snappy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1371154D1A1BEBC5008A71B9 /* Snappy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		137115601A1C1A78008A71B9 /* UIViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1371155F1A1C1A78008A71B9 /* UIViewUtils.swift */; };
+		137115621A1C4C07008A71B9 /* Utility.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 137115611A1C4C07008A71B9 /* Utility.storyboard */; };
+		137115641A1C4ED3008A71B9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137115631A1C4ED3008A71B9 /* ProfileViewController.swift */; };
 		139B160A1A12F4BB0014AF49 /* MasterSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139B16091A12F4BB0014AF49 /* MasterSegue.swift */; };
 		13A1D5E21A12A93C00D110FB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A1D5E11A12A93C00D110FB /* MenuViewController.swift */; };
 		13A1D5E51A12B8B600D110FB /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A1D5E41A12B8B600D110FB /* StringUtils.swift */; };
@@ -28,12 +30,13 @@
 		13A2F5F31A16A15D0057182D /* maps.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A2F5F21A16A15D0057182D /* maps.storyboard */; };
 		13A2F5F51A16A1B70057182D /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A2F5F41A16A1B70057182D /* MapsViewController.swift */; };
 		13E33C1C1A1533B5007B413B /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13E33C1B1A1533B4007B413B /* profile.storyboard */; };
+		13EE02391A1C4FAB001470A3 /* ProfileKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EE02381A1C4FAB001470A3 /* ProfileKViewController.swift */; };
+		13EE023C1A1C694F001470A3 /* HJREmbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EE023B1A1C694F001470A3 /* HJREmbedView.swift */; };
 		13F1E5541A13F9A400EB08AA /* MuseoSans_500.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E54F1A13F9A400EB08AA /* MuseoSans_500.otf */; };
 		13F1E5551A13F9A400EB08AA /* MuseoSans_700.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E5501A13F9A400EB08AA /* MuseoSans_700.otf */; };
 		13F1E5561A13F9A400EB08AA /* MuseoSans_900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E5511A13F9A400EB08AA /* MuseoSans_900.otf */; };
 		13F1E5571A13F9A400EB08AA /* MuseoSans-100.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E5521A13F9A400EB08AA /* MuseoSans-100.otf */; };
 		13F1E5581A13F9A400EB08AA /* MuseoSans-300.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E5531A13F9A400EB08AA /* MuseoSans-300.otf */; };
-		13F1E55F1A14193F00EB08AA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F1E55E1A14193F00EB08AA /* ProfileViewController.swift */; };
 		13F1E5611A143BE300EB08AA /* SegueUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F1E5601A143BE300EB08AA /* SegueUtils.swift */; };
 		13F1E5631A144BF700EB08AA /* home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E5621A144BF700EB08AA /* home.storyboard */; };
 /* End PBXBuildFile section */
@@ -99,6 +102,8 @@
 		137115311A1BC839008A71B9 /* HomeSubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSubViewController.swift; sourceTree = "<group>"; };
 		137115471A1BEBC4008A71B9 /* Snappy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Snappy.xcodeproj; path = "../../../../../../../../Projects/MasterApp/Snappy-master/Snappy.xcodeproj"; sourceTree = "<group>"; };
 		1371155F1A1C1A78008A71B9 /* UIViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewUtils.swift; sourceTree = "<group>"; };
+		137115611A1C4C07008A71B9 /* Utility.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Utility.storyboard; sourceTree = "<group>"; };
+		137115631A1C4ED3008A71B9 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		139B16091A12F4BB0014AF49 /* MasterSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterSegue.swift; path = ../MasterSegue.swift; sourceTree = "<group>"; };
 		13A1D5E11A12A93C00D110FB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		13A1D5E41A12B8B600D110FB /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
@@ -108,12 +113,13 @@
 		13A2F5F21A16A15D0057182D /* maps.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = maps.storyboard; sourceTree = "<group>"; };
 		13A2F5F41A16A1B70057182D /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		13E33C1B1A1533B4007B413B /* profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
+		13EE02381A1C4FAB001470A3 /* ProfileKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileKViewController.swift; sourceTree = "<group>"; };
+		13EE023B1A1C694F001470A3 /* HJREmbedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJREmbedView.swift; sourceTree = "<group>"; };
 		13F1E54F1A13F9A400EB08AA /* MuseoSans_500.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_500.otf; sourceTree = "<group>"; };
 		13F1E5501A13F9A400EB08AA /* MuseoSans_700.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_700.otf; sourceTree = "<group>"; };
 		13F1E5511A13F9A400EB08AA /* MuseoSans_900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_900.otf; sourceTree = "<group>"; };
 		13F1E5521A13F9A400EB08AA /* MuseoSans-100.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-100.otf"; sourceTree = "<group>"; };
 		13F1E5531A13F9A400EB08AA /* MuseoSans-300.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-300.otf"; sourceTree = "<group>"; };
-		13F1E55E1A14193F00EB08AA /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		13F1E5601A143BE300EB08AA /* SegueUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueUtils.swift; sourceTree = "<group>"; };
 		13F1E5621A144BF700EB08AA /* home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = home.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +150,7 @@
 				13F1E5621A144BF700EB08AA /* home.storyboard */,
 				1324A8001A14516500262C7C /* people.storyboard */,
 				13A2F5F21A16A15D0057182D /* maps.storyboard */,
+				137115611A1C4C07008A71B9 /* Utility.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -151,6 +158,7 @@
 		13369D9E1A0D72F7000F9032 = {
 			isa = PBXGroup;
 			children = (
+				13EE023B1A1C694F001470A3 /* HJREmbedView.swift */,
 				137115461A1BEBAF008A71B9 /* Frameworks */,
 				13369DA91A0D72F7000F9032 /* masterapp */,
 				13369DC21A0D72F7000F9032 /* masterappTests */,
@@ -245,10 +253,11 @@
 			isa = PBXGroup;
 			children = (
 				13A1D5E11A12A93C00D110FB /* MenuViewController.swift */,
-				13F1E55E1A14193F00EB08AA /* ProfileViewController.swift */,
 				13A2F5F41A16A1B70057182D /* MapsViewController.swift */,
 				13A2F5EC1A16960E0057182D /* HomeViewController.swift */,
 				13A2F5EA1A16936E0057182D /* ContentViewController.swift */,
+				137115631A1C4ED3008A71B9 /* ProfileViewController.swift */,
+				13EE02381A1C4FAB001470A3 /* ProfileKViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -391,6 +400,7 @@
 				13F1E5581A13F9A400EB08AA /* MuseoSans-300.otf in Resources */,
 				13369DB71A0D72F7000F9032 /* Images.xcassets in Resources */,
 				13A2F5F31A16A15D0057182D /* maps.storyboard in Resources */,
+				137115621A1C4C07008A71B9 /* Utility.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,12 +420,14 @@
 			files = (
 				13A2F5EB1A16936E0057182D /* ContentViewController.swift in Sources */,
 				13369DB21A0D72F7000F9032 /* ViewController.swift in Sources */,
+				13EE02391A1C4FAB001470A3 /* ProfileKViewController.swift in Sources */,
 				13A1D5E51A12B8B600D110FB /* StringUtils.swift in Sources */,
 				13A2F5F51A16A1B70057182D /* MapsViewController.swift in Sources */,
+				137115641A1C4ED3008A71B9 /* ProfileViewController.swift in Sources */,
 				13369DAD1A0D72F7000F9032 /* AppDelegate.swift in Sources */,
 				13369DB01A0D72F7000F9032 /* masterapp.xcdatamodeld in Sources */,
-				13F1E55F1A14193F00EB08AA /* ProfileViewController.swift in Sources */,
 				13F1E5611A143BE300EB08AA /* SegueUtils.swift in Sources */,
+				13EE023C1A1C694F001470A3 /* HJREmbedView.swift in Sources */,
 				13A2F5ED1A16960E0057182D /* HomeViewController.swift in Sources */,
 				13A2F5E91A1688760057182D /* protocols.swift in Sources */,
 				137115601A1C1A78008A71B9 /* UIViewUtils.swift in Sources */,
