@@ -7,10 +7,11 @@
 //
 
 import UIKit
-
+/*
 protocol MenuViewControllerDelegate{
     func handleMenuChoice(controller: MenuViewController, theChoice:String)
 }
+*/
 
 class MenuViewController: UIViewController {
       var delegate:MenuViewControllerDelegate? = nil

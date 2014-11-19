@@ -7,17 +7,52 @@
 //
 
 import UIKit
+import Snappy
 
-class ViewController: UIViewController, MenuViewControllerDelegate {
-    var passId:String!
+class ViewController: UIViewController, MenuViewControllerDelegate, ContentViewControllerDelegate {
+    var passId = (storyboard: "", screen: "")
+    
      var expanded=false
    var currentViewController: UIViewController?
     var leadingConstraint: NSLayoutConstraint!
-    var availableIdentifiers = ["home","profile", "schedule", "people"]
+    var availableIdentifiers = ["home","profile", "schedule", "people", "maps"]
     @IBOutlet weak var placeholderView: UIView!
     
     @IBOutlet weak var placeholderContainer: UIView!
      //@IBOutlet weak var leadingConstraint: NSLayoutConstraint!
+    
+    
+    /*
+    @IBAction func testAnim(sender: AnyObject) {
+       
+        let v1 = placeholderView.subviews as [UIView]
+        if  (v1.count > 0 ) {
+        
+            let theView: UIView = v1[0] as UIView
+            theView.alpha = 0.9
+               let padding = UIEdgeInsetsMake(300, 0, 0, 0)
+            
+            
+            
+            
+            theView.snp_makeConstraints { make in
+                make.edges.equalTo(theView.superview!).with.insets(padding)
+                return // this return is a fix for implicit returns in Swift and is only required for single line constraints
+            }
+            
+                  }
+    
+       
+        
+       // for view in placeholderView.subviews as [UIView] {
+           // view.alpha = 0.5
+            
+        //}
+
+    }
+*/
+
+
     
     @IBOutlet weak var contentContainer: UIView!
      @IBOutlet weak var menuViewContainer: UIView!
@@ -37,25 +72,25 @@ class ViewController: UIViewController, MenuViewControllerDelegate {
         
         var newConstraint = NSLayoutConstraint(item: menuViewContainer, attribute: .Leading, relatedBy: .Equal, toItem: self.view, attribute: .Leading, multiplier: 1.0, constant: w)
         
-        UIView.animateWithDuration(0.5, delay: 0.0, options: .CurveEaseOut , animations: {
+        UIView.animateWithDuration(0.25, delay: 0.0, options: .CurveEaseOut , animations: {
             self.view.removeConstraint(self.leadingConstraint)
             self.view.addConstraint(newConstraint)
             self.view.layoutIfNeeded()
-            }, completion: nil)
+            }, completion: { finished in
+                self.leadingConstraint = newConstraint
+
+        })
 
         
-            leadingConstraint = newConstraint
-           }
+                      }
    
     override func viewDidLoad() {
         super.viewDidLoad()
        initPositionMenu()
-       
-      loadStoryboard ("home")
+     
+       loadStoryboard ("home", theScreen:"entry")
 
-      // performSegueWithIdentifier("homeSegue", sender: nil)
-        // Do any additional setup after loading the view, typically from a nib.
-       // handleMenuChoice (new AnyObject()  theChoice: "home")
+     
     }
 
     override func didReceiveMemoryWarning() {
@@ -81,18 +116,24 @@ class ViewController: UIViewController, MenuViewControllerDelegate {
         if(contains(availableIdentifiers, segue.identifier!)) {
                        placeholderView.userInteractionEnabled=true
                     }
+    
+
         if segue.identifier == "menuSegue"{
             let vc = segue.destinationViewController as MenuViewController
-            vc.delegate = self
+                vc.delegate = self
         }
         else{
             var segRef = segue as MasterSegue
             segRef.theID=passId
-
+            
+           
         }
         
     }
     
+    func navToView(theView:String, theScreen:String){
+        loadStoryboard (theView, theScreen:theScreen)
+    }
     func loadContainer (theBoard:String){
         /*
         for view in contentContainer.subviews as [UIView] {
@@ -137,11 +178,12 @@ class ViewController: UIViewController, MenuViewControllerDelegate {
 
     }
     
-    func loadStoryboard (theBoard:String){
+    func loadStoryboard (theBoard:String, theScreen:String){
         var theSegue = theBoard.lowercaseString
         //loadContainer(theSegue)
        //return
-        passId = theSegue
+        passId.storyboard = theSegue
+        passId.screen = theScreen
         var loadSegue="Segue1"
         if(contains(availableIdentifiers, theSegue)) {
             
@@ -151,7 +193,7 @@ class ViewController: UIViewController, MenuViewControllerDelegate {
 
     }
     func handleMenuChoice(controller: MenuViewController, theChoice:String) {
-        loadStoryboard(theChoice)
+        loadStoryboard(theChoice, theScreen:"entry")
     }
     
 

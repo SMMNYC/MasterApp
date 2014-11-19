@@ -15,9 +15,18 @@
 		13369DB71A0D72F7000F9032 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13369DB61A0D72F7000F9032 /* Images.xcassets */; };
 		13369DBA1A0D72F7000F9032 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13369DB81A0D72F7000F9032 /* LaunchScreen.xib */; };
 		13369DC61A0D72F7000F9032 /* masterappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13369DC51A0D72F7000F9032 /* masterappTests.swift */; };
+		137115321A1BC839008A71B9 /* HomeSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137115311A1BC839008A71B9 /* HomeSubViewController.swift */; };
+		1371155A1A1BED2C008A71B9 /* Snappy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1371154D1A1BEBC5008A71B9 /* Snappy.framework */; };
+		1371155B1A1BED2C008A71B9 /* Snappy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1371154D1A1BEBC5008A71B9 /* Snappy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		137115601A1C1A78008A71B9 /* UIViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1371155F1A1C1A78008A71B9 /* UIViewUtils.swift */; };
 		139B160A1A12F4BB0014AF49 /* MasterSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139B16091A12F4BB0014AF49 /* MasterSegue.swift */; };
 		13A1D5E21A12A93C00D110FB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A1D5E11A12A93C00D110FB /* MenuViewController.swift */; };
 		13A1D5E51A12B8B600D110FB /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A1D5E41A12B8B600D110FB /* StringUtils.swift */; };
+		13A2F5E91A1688760057182D /* protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A2F5E81A1688760057182D /* protocols.swift */; };
+		13A2F5EB1A16936E0057182D /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A2F5EA1A16936E0057182D /* ContentViewController.swift */; };
+		13A2F5ED1A16960E0057182D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A2F5EC1A16960E0057182D /* HomeViewController.swift */; };
+		13A2F5F31A16A15D0057182D /* maps.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A2F5F21A16A15D0057182D /* maps.storyboard */; };
+		13A2F5F51A16A1B70057182D /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A2F5F41A16A1B70057182D /* MapsViewController.swift */; };
 		13E33C1C1A1533B5007B413B /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13E33C1B1A1533B4007B413B /* profile.storyboard */; };
 		13F1E5541A13F9A400EB08AA /* MuseoSans_500.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E54F1A13F9A400EB08AA /* MuseoSans_500.otf */; };
 		13F1E5551A13F9A400EB08AA /* MuseoSans_700.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E5501A13F9A400EB08AA /* MuseoSans_700.otf */; };
@@ -37,7 +46,42 @@
 			remoteGlobalIDString = 13369DA61A0D72F7000F9032;
 			remoteInfo = masterapp;
 		};
+		1371154C1A1BEBC5008A71B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 137115471A1BEBC4008A71B9 /* Snappy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
+			remoteInfo = Snappy;
+		};
+		1371154E1A1BEBC5008A71B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 137115471A1BEBC4008A71B9 /* Snappy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
+			remoteInfo = SnappyTests;
+		};
+		1371155C1A1BED2C008A71B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 137115471A1BEBC4008A71B9 /* Snappy.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
+			remoteInfo = Snappy;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1371155E1A1BED2D008A71B9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1371155B1A1BED2C008A71B9 /* Snappy.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1324A8001A14516500262C7C /* people.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = people.storyboard; sourceTree = "<group>"; };
@@ -52,9 +96,17 @@
 		13369DBF1A0D72F7000F9032 /* masterappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = masterappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13369DC41A0D72F7000F9032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13369DC51A0D72F7000F9032 /* masterappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = masterappTests.swift; sourceTree = "<group>"; };
+		137115311A1BC839008A71B9 /* HomeSubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSubViewController.swift; sourceTree = "<group>"; };
+		137115471A1BEBC4008A71B9 /* Snappy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Snappy.xcodeproj; path = "../../../../../../../../Projects/MasterApp/Snappy-master/Snappy.xcodeproj"; sourceTree = "<group>"; };
+		1371155F1A1C1A78008A71B9 /* UIViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewUtils.swift; sourceTree = "<group>"; };
 		139B16091A12F4BB0014AF49 /* MasterSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterSegue.swift; path = ../MasterSegue.swift; sourceTree = "<group>"; };
 		13A1D5E11A12A93C00D110FB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		13A1D5E41A12B8B600D110FB /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		13A2F5E81A1688760057182D /* protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = protocols.swift; sourceTree = "<group>"; };
+		13A2F5EA1A16936E0057182D /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		13A2F5EC1A16960E0057182D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		13A2F5F21A16A15D0057182D /* maps.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = maps.storyboard; sourceTree = "<group>"; };
+		13A2F5F41A16A1B70057182D /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		13E33C1B1A1533B4007B413B /* profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
 		13F1E54F1A13F9A400EB08AA /* MuseoSans_500.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_500.otf; sourceTree = "<group>"; };
 		13F1E5501A13F9A400EB08AA /* MuseoSans_700.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_700.otf; sourceTree = "<group>"; };
@@ -71,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1371155A1A1BED2C008A71B9 /* Snappy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,9 +140,10 @@
 		1324A7FF1A14511800262C7C /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				13F1E5621A144BF700EB08AA /* home.storyboard */,
 				13E33C1B1A1533B4007B413B /* profile.storyboard */,
+				13F1E5621A144BF700EB08AA /* home.storyboard */,
 				1324A8001A14516500262C7C /* people.storyboard */,
+				13A2F5F21A16A15D0057182D /* maps.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -97,6 +151,7 @@
 		13369D9E1A0D72F7000F9032 = {
 			isa = PBXGroup;
 			children = (
+				137115461A1BEBAF008A71B9 /* Frameworks */,
 				13369DA91A0D72F7000F9032 /* masterapp */,
 				13369DC21A0D72F7000F9032 /* masterappTests */,
 				13369DA81A0D72F7000F9032 /* Products */,
@@ -115,19 +170,20 @@
 		13369DA91A0D72F7000F9032 /* masterapp */ = {
 			isa = PBXGroup;
 			children = (
-				1324A7FF1A14511800262C7C /* Storyboards */,
-				13F1E54D1A13F98500EB08AA /* Resources */,
-				139B16091A12F4BB0014AF49 /* MasterSegue.swift */,
-				13A1D5E31A12B8A500D110FB /* Utils */,
 				13369DAC1A0D72F7000F9032 /* AppDelegate.swift */,
 				13369DB11A0D72F7000F9032 /* ViewController.swift */,
 				13369DB31A0D72F7000F9032 /* Main.storyboard */,
+				139B16091A12F4BB0014AF49 /* MasterSegue.swift */,
+				13A2F5E81A1688760057182D /* protocols.swift */,
+				13A2F5E11A1678B20057182D /* Controllers */,
+				1324A7FF1A14511800262C7C /* Storyboards */,
+				13F1E54D1A13F98500EB08AA /* Resources */,
+				13A1D5E31A12B8A500D110FB /* Utils */,
 				13369DB61A0D72F7000F9032 /* Images.xcassets */,
 				13369DB81A0D72F7000F9032 /* LaunchScreen.xib */,
 				13369DAE1A0D72F7000F9032 /* masterapp.xcdatamodeld */,
 				13369DAA1A0D72F7000F9032 /* Supporting Files */,
-				13A1D5E11A12A93C00D110FB /* MenuViewController.swift */,
-				13F1E55E1A14193F00EB08AA /* ProfileViewController.swift */,
+				137115311A1BC839008A71B9 /* HomeSubViewController.swift */,
 			);
 			path = masterapp;
 			sourceTree = "<group>";
@@ -157,13 +213,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		137115461A1BEBAF008A71B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				137115471A1BEBC4008A71B9 /* Snappy.xcodeproj */,
+			);
+			name = Frameworks;
+			path = masterapp;
+			sourceTree = "<group>";
+		};
+		137115481A1BEBC4008A71B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1371154D1A1BEBC5008A71B9 /* Snappy.framework */,
+				1371154F1A1BEBC5008A71B9 /* SnappyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		13A1D5E31A12B8A500D110FB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				13A1D5E41A12B8B600D110FB /* StringUtils.swift */,
 				13F1E5601A143BE300EB08AA /* SegueUtils.swift */,
+				1371155F1A1C1A78008A71B9 /* UIViewUtils.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		13A2F5E11A1678B20057182D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				13A1D5E11A12A93C00D110FB /* MenuViewController.swift */,
+				13F1E55E1A14193F00EB08AA /* ProfileViewController.swift */,
+				13A2F5F41A16A1B70057182D /* MapsViewController.swift */,
+				13A2F5EC1A16960E0057182D /* HomeViewController.swift */,
+				13A2F5EA1A16936E0057182D /* ContentViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		13F1E54D1A13F98500EB08AA /* Resources */ = {
@@ -196,10 +283,12 @@
 				13369DA31A0D72F7000F9032 /* Sources */,
 				13369DA41A0D72F7000F9032 /* Frameworks */,
 				13369DA51A0D72F7000F9032 /* Resources */,
+				1371155E1A1BED2D008A71B9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1371155D1A1BED2C008A71B9 /* PBXTargetDependency */,
 			);
 			name = masterapp;
 			productName = masterapp;
@@ -254,6 +343,12 @@
 			mainGroup = 13369D9E1A0D72F7000F9032;
 			productRefGroup = 13369DA81A0D72F7000F9032 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 137115481A1BEBC4008A71B9 /* Products */;
+					ProjectRef = 137115471A1BEBC4008A71B9 /* Snappy.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13369DA61A0D72F7000F9032 /* masterapp */,
@@ -261,6 +356,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1371154D1A1BEBC5008A71B9 /* Snappy.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Snappy.framework;
+			remoteRef = 1371154C1A1BEBC5008A71B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1371154F1A1BEBC5008A71B9 /* SnappyTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SnappyTests.xctest;
+			remoteRef = 1371154E1A1BEBC5008A71B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		13369DA51A0D72F7000F9032 /* Resources */ = {
@@ -278,6 +390,7 @@
 				13F1E5631A144BF700EB08AA /* home.storyboard in Resources */,
 				13F1E5581A13F9A400EB08AA /* MuseoSans-300.otf in Resources */,
 				13369DB71A0D72F7000F9032 /* Images.xcassets in Resources */,
+				13A2F5F31A16A15D0057182D /* maps.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,14 +408,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13A2F5EB1A16936E0057182D /* ContentViewController.swift in Sources */,
 				13369DB21A0D72F7000F9032 /* ViewController.swift in Sources */,
 				13A1D5E51A12B8B600D110FB /* StringUtils.swift in Sources */,
+				13A2F5F51A16A1B70057182D /* MapsViewController.swift in Sources */,
 				13369DAD1A0D72F7000F9032 /* AppDelegate.swift in Sources */,
 				13369DB01A0D72F7000F9032 /* masterapp.xcdatamodeld in Sources */,
 				13F1E55F1A14193F00EB08AA /* ProfileViewController.swift in Sources */,
 				13F1E5611A143BE300EB08AA /* SegueUtils.swift in Sources */,
+				13A2F5ED1A16960E0057182D /* HomeViewController.swift in Sources */,
+				13A2F5E91A1688760057182D /* protocols.swift in Sources */,
+				137115601A1C1A78008A71B9 /* UIViewUtils.swift in Sources */,
 				13A1D5E21A12A93C00D110FB /* MenuViewController.swift in Sources */,
 				139B160A1A12F4BB0014AF49 /* MasterSegue.swift in Sources */,
+				137115321A1BC839008A71B9 /* HomeSubViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +440,11 @@
 			isa = PBXTargetDependency;
 			target = 13369DA61A0D72F7000F9032 /* masterapp */;
 			targetProxy = 13369DC01A0D72F7000F9032 /* PBXContainerItemProxy */;
+		};
+		1371155D1A1BED2C008A71B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Snappy;
+			targetProxy = 1371155C1A1BED2C008A71B9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -428,6 +552,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMPRESS_PNG_FILES = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = masterapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -440,6 +565,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMPRESS_PNG_FILES = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = masterapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
