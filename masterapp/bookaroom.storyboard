@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Maps View Controller-->
+        <scene sceneID="pe4-pU-hEB">
+            <objects>
+                <viewController storyboardIdentifier="entry" id="yOE-5C-m9q" customClass="MapsViewController" customModule="masterapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ATd-z7-HfG"/>
+                        <viewControllerLayoutGuide type="bottom" id="nKG-L8-076"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o54-wQ-ZZb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A3s-VH-Ref">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Elt-a7-eaY">
+                                        <rect key="frame" x="-7" y="-5" width="607" height="605"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Book A Room from Storyboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBd-uG-byd">
+                                                <rect key="frame" x="314" y="203" width="237" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="HBd-uG-byd" firstAttribute="top" secondItem="Elt-a7-eaY" secondAttribute="top" constant="203" id="DgE-3L-Iue"/>
+                                            <constraint firstAttribute="trailing" secondItem="HBd-uG-byd" secondAttribute="trailing" constant="56" id="yWP-jS-EQa"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.56436697849999995" blue="0.096570631879999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Elt-a7-eaY" secondAttribute="trailing" id="0AA-fw-jKh"/>
+                                    <constraint firstItem="Elt-a7-eaY" firstAttribute="top" secondItem="A3s-VH-Ref" secondAttribute="top" id="99V-cQ-sjQ"/>
+                                    <constraint firstItem="Elt-a7-eaY" firstAttribute="leading" secondItem="A3s-VH-Ref" secondAttribute="leading" id="Z7M-k4-nSn"/>
+                                    <constraint firstAttribute="bottom" secondItem="Elt-a7-eaY" secondAttribute="bottom" id="dZ9-XW-JKH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="A3s-VH-Ref" secondAttribute="trailing" id="8hE-3o-QoC"/>
+                            <constraint firstItem="A3s-VH-Ref" firstAttribute="leading" secondItem="o54-wQ-ZZb" secondAttribute="leading" id="X7i-VU-Qyu"/>
+                            <constraint firstItem="A3s-VH-Ref" firstAttribute="top" secondItem="o54-wQ-ZZb" secondAttribute="top" id="dJU-pZ-n5o"/>
+                            <constraint firstAttribute="bottom" secondItem="A3s-VH-Ref" secondAttribute="bottom" id="dSh-Em-dlh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="USa-XH-A3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="417"/>
+        </scene>
+    </scenes>
+</document>

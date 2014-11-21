@@ -48,26 +48,38 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="screen" value="entry"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile from Storyboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYb-uz-Z6b">
-                                                <rect key="frame" x="42" y="47" width="179" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <view clipsSubviews="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GIi-8H-I8V" customClass="HJREmbedView" customModule="masterapp" customModuleProvider="target">
-                                                <rect key="frame" x="340" y="123" width="216" height="215"/>
+                                            <view clipsSubviews="YES" contentMode="center" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GIi-8H-I8V" customClass="HJREmbedView" customModule="masterapp" customModuleProvider="target">
+                                                <rect key="frame" x="361" y="77" width="216" height="215"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="storyboard" value="Utility"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="screen" value="embed2"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile from Storyboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYb-uz-Z6b">
+                                                <rect key="frame" x="42" y="47" width="179" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view clipsSubviews="YES" contentMode="center" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xKV-DA-Goq" customClass="HJREmbedView" customModule="masterapp" customModuleProvider="target">
+                                                <rect key="frame" x="361" y="307" width="216" height="215"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="storyboard" value="Utility"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="screen" value="chart"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.43874125670000003" green="0.83868781889999999" blue="0.3401523535" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="GQq-cf-moL" secondAttribute="trailing" constant="30" id="0Db-bj-hCB"/>
+                                            <constraint firstAttribute="bottom" secondItem="xKV-DA-Goq" secondAttribute="bottom" constant="83" id="A9m-3h-wD7"/>
+                                            <constraint firstItem="GIi-8H-I8V" firstAttribute="leading" secondItem="c1j-qg-c1q" secondAttribute="trailing" constant="13" id="K9z-Bm-CGj"/>
+                                            <constraint firstItem="GIi-8H-I8V" firstAttribute="top" secondItem="c1j-qg-c1q" secondAttribute="top" id="MQi-Z8-HNf"/>
                                             <constraint firstItem="GQq-cf-moL" firstAttribute="top" secondItem="4mh-zf-Lab" secondAttribute="top" constant="260" id="Ncj-KG-4iT"/>
                                             <constraint firstAttribute="bottom" secondItem="c1j-qg-c1q" secondAttribute="bottom" constant="87" id="m1U-LV-1Fl"/>
+                                            <constraint firstAttribute="trailing" secondItem="xKV-DA-Goq" secondAttribute="trailing" constant="30" id="o95-Vl-VOG"/>
                                             <constraint firstItem="c1j-qg-c1q" firstAttribute="leading" secondItem="4mh-zf-Lab" secondAttribute="leading" constant="34" id="wxm-C8-cz8"/>
                                         </constraints>
                                     </view>

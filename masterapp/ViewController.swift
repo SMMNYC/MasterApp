@@ -15,7 +15,8 @@ class ViewController: UIViewController, MenuViewControllerDelegate, ContentViewC
      var expanded=false
    var currentViewController: UIViewController?
     var leadingConstraint: NSLayoutConstraint!
-    var availableIdentifiers = ["home","profile", "schedule", "people", "maps"]
+    var availableIdentifiers = ["home","profile", "schedule", "people", "maps","bookaroom","guides", "learning", "programs", "catalog", "forum","community", "feed", "events"]
+    //["Home","Profile","Schedule", "Book A Room", "People", "Maps", "Guides", "Learning", "Programs", "Catalog", "Forum","Community", "Feed", "Events"]
     @IBOutlet weak var placeholderView: UIView!
     
     @IBOutlet weak var placeholderContainer: UIView!
@@ -193,7 +194,8 @@ class ViewController: UIViewController, MenuViewControllerDelegate, ContentViewC
 
     }
     func handleMenuChoice(controller: MenuViewController, theChoice:String) {
-        loadStoryboard(theChoice, theScreen:"entry")
+        var theCleanedChoice=theChoice.replace(" ", withString:"")
+        loadStoryboard(theCleanedChoice, theScreen:"entry")
     }
     
 

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Maps View Controller-->
+        <scene sceneID="Wen-U4-BYD">
+            <objects>
+                <viewController storyboardIdentifier="entry" id="Gky-DL-JPA" customClass="MapsViewController" customModule="masterapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uZu-Uc-CIo"/>
+                        <viewControllerLayoutGuide type="bottom" id="prX-b2-Y1n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kyI-Ek-maj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mTt-ek-n4v">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s33-gs-QZA">
+                                        <rect key="frame" x="-7" y="-5" width="607" height="605"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Learning from Storyboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFg-xZ-IcJ">
+                                                <rect key="frame" x="314" y="203" width="197" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="WFg-xZ-IcJ" firstAttribute="top" secondItem="s33-gs-QZA" secondAttribute="top" constant="203" id="7Jw-oE-fXC"/>
+                                            <constraint firstAttribute="trailing" secondItem="WFg-xZ-IcJ" secondAttribute="trailing" constant="56" id="sCW-mc-q0i"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.56436697849999995" blue="0.096570631879999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="s33-gs-QZA" firstAttribute="leading" secondItem="mTt-ek-n4v" secondAttribute="leading" id="D6I-zJ-doa"/>
+                                    <constraint firstAttribute="bottom" secondItem="s33-gs-QZA" secondAttribute="bottom" id="NcJ-1G-peA"/>
+                                    <constraint firstAttribute="trailing" secondItem="s33-gs-QZA" secondAttribute="trailing" id="Tqf-cC-4NM"/>
+                                    <constraint firstItem="s33-gs-QZA" firstAttribute="top" secondItem="mTt-ek-n4v" secondAttribute="top" id="eKR-dR-s2u"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="mTt-ek-n4v" secondAttribute="bottom" id="6tC-AO-f3y"/>
+                            <constraint firstItem="mTt-ek-n4v" firstAttribute="leading" secondItem="kyI-Ek-maj" secondAttribute="leading" id="U9S-61-EJe"/>
+                            <constraint firstItem="mTt-ek-n4v" firstAttribute="top" secondItem="kyI-Ek-maj" secondAttribute="top" id="gLJ-Az-Pg3"/>
+                            <constraint firstAttribute="trailing" secondItem="mTt-ek-n4v" secondAttribute="trailing" id="v1g-Hf-XNb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ucZ-wx-TaS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="417"/>
+        </scene>
+    </scenes>
+</document>

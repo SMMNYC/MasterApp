@@ -43,11 +43,23 @@
                                             <segment title="Second"/>
                                         </segments>
                                     </segmentedControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAs-hI-7hl">
+                                        <rect key="frame" x="147" y="217" width="46" height="30"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="bNT-MF-iUb" kind="presentation" identifier="test" id="ktY-NQ-lgl"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="JYb-uz-Z6b" secondAttribute="trailing" constant="16" id="CQf-aa-x0G"/>
+                                    <constraint firstItem="GAs-hI-7hl" firstAttribute="leading" secondItem="zlH-zn-DjP" secondAttribute="leading" constant="147" id="NNd-NM-3eH"/>
                                     <constraint firstItem="JYb-uz-Z6b" firstAttribute="top" secondItem="zlH-zn-DjP" secondAttribute="top" constant="195" id="Qp4-0q-PcD"/>
+                                    <constraint firstItem="GAs-hI-7hl" firstAttribute="top" secondItem="zlH-zn-DjP" secondAttribute="top" constant="217" id="b0y-Sp-Bra"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aLr-bO-KSh" secondAttribute="trailing" constant="138" id="cYc-aA-5h3"/>
                                     <constraint firstAttribute="trailing" secondItem="aLr-bO-KSh" secondAttribute="trailing" constant="138" id="e1d-Pj-LaP"/>
                                     <constraint firstAttribute="bottom" secondItem="aLr-bO-KSh" secondAttribute="bottom" constant="190" id="mhT-D4-zgH"/>
@@ -67,6 +79,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LrB-NH-IYg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="436" y="528"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LuH-Ae-ybi">
+            <objects>
+                <viewController id="bNT-MF-iUb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mcu-wU-Bea"/>
+                        <viewControllerLayoutGuide type="bottom" id="mGa-Ew-2wT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zQ1-eL-QfT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="slc-9F-M1Q">
+                                <rect key="frame" x="0.0" y="5" width="600" height="600"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.56436697849999995" blue="0.096570631879999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="slc-9F-M1Q" secondAttribute="trailing" id="DcV-B3-BYS"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="slc-9F-M1Q" secondAttribute="bottom" id="Kmy-7H-QOu"/>
+                            <constraint firstItem="slc-9F-M1Q" firstAttribute="top" secondItem="zQ1-eL-QfT" secondAttribute="topMargin" id="R4D-Th-yPA"/>
+                            <constraint firstItem="slc-9F-M1Q" firstAttribute="leading" secondItem="zQ1-eL-QfT" secondAttribute="leadingMargin" id="zb7-5v-zRQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B19-qH-FHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="364" y="1191"/>
         </scene>
         <!--Title-->
         <scene sceneID="gP9-ae-0dn">
@@ -147,48 +188,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8kl-f0-3ne" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1739" y="1295"/>
-        </scene>
-        <!--Home View Controller-->
-        <scene sceneID="kVg-L5-FxN">
-            <objects>
-                <viewController storyboardIdentifier="Screen_2" id="gZx-Iu-0Ee" customClass="HomeViewController" customModule="masterapp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="UXs-EK-IA7"/>
-                        <viewControllerLayoutGuide type="bottom" id="UaZ-hv-JMj"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="95k-rQ-lnI">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="eLk-F1-ORE">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Screen 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nq-Qg-1e4">
-                                        <rect key="frame" x="465" y="195" width="119" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="1nq-Qg-1e4" firstAttribute="top" secondItem="eLk-F1-ORE" secondAttribute="top" constant="195" id="9Bq-Gf-KWg"/>
-                                    <constraint firstAttribute="trailing" secondItem="1nq-Qg-1e4" secondAttribute="trailing" constant="16" id="mdO-Og-wgK"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="eLk-F1-ORE" secondAttribute="bottom" id="TtH-7S-pZ9"/>
-                            <constraint firstItem="eLk-F1-ORE" firstAttribute="leading" secondItem="95k-rQ-lnI" secondAttribute="leading" id="UFN-rP-6kn"/>
-                            <constraint firstAttribute="trailing" secondItem="eLk-F1-ORE" secondAttribute="trailing" id="a7R-rZ-BmH"/>
-                            <constraint firstItem="eLk-F1-ORE" firstAttribute="top" secondItem="95k-rQ-lnI" secondAttribute="top" id="gTg-2E-CHB"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mwT-tO-TZl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="426" y="1188"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Bll-YV-7mx">

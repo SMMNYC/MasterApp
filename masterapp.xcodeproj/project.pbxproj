@@ -32,6 +32,16 @@
 		13E33C1C1A1533B5007B413B /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13E33C1B1A1533B4007B413B /* profile.storyboard */; };
 		13EE02391A1C4FAB001470A3 /* ProfileKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EE02381A1C4FAB001470A3 /* ProfileKViewController.swift */; };
 		13EE023C1A1C694F001470A3 /* HJREmbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EE023B1A1C694F001470A3 /* HJREmbedView.swift */; };
+		13EE02A01A1D101C001470A3 /* bookaroom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13EE029F1A1D101C001470A3 /* bookaroom.storyboard */; };
+		13EE02A21A1D1035001470A3 /* guides.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13EE02A11A1D1035001470A3 /* guides.storyboard */; };
+		13EE02A41A1D103E001470A3 /* learning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13EE02A31A1D103E001470A3 /* learning.storyboard */; };
+		13EE02A61A1D1044001470A3 /* programs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13EE02A51A1D1044001470A3 /* programs.storyboard */; };
+		13EE02A81A1D104D001470A3 /* catalog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13EE02A71A1D104D001470A3 /* catalog.storyboard */; };
+		13EE02AA1A1D1053001470A3 /* forum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13EE02A91A1D1053001470A3 /* forum.storyboard */; };
+		13EE02AC1A1D105D001470A3 /* community.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13EE02AB1A1D105D001470A3 /* community.storyboard */; };
+		13EE02AE1A1D1063001470A3 /* feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13EE02AD1A1D1063001470A3 /* feed.storyboard */; };
+		13EE02B21A1D1261001470A3 /* events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13EE02B11A1D1261001470A3 /* events.storyboard */; };
+		13EE02B41A1D17E1001470A3 /* schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13EE02B31A1D17E1001470A3 /* schedule.storyboard */; };
 		13F1E5541A13F9A400EB08AA /* MuseoSans_500.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E54F1A13F9A400EB08AA /* MuseoSans_500.otf */; };
 		13F1E5551A13F9A400EB08AA /* MuseoSans_700.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E5501A13F9A400EB08AA /* MuseoSans_700.otf */; };
 		13F1E5561A13F9A400EB08AA /* MuseoSans_900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E5511A13F9A400EB08AA /* MuseoSans_900.otf */; };
@@ -115,6 +125,16 @@
 		13E33C1B1A1533B4007B413B /* profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
 		13EE02381A1C4FAB001470A3 /* ProfileKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileKViewController.swift; sourceTree = "<group>"; };
 		13EE023B1A1C694F001470A3 /* HJREmbedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJREmbedView.swift; sourceTree = "<group>"; };
+		13EE029F1A1D101C001470A3 /* bookaroom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = bookaroom.storyboard; sourceTree = "<group>"; };
+		13EE02A11A1D1035001470A3 /* guides.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = guides.storyboard; sourceTree = "<group>"; };
+		13EE02A31A1D103E001470A3 /* learning.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = learning.storyboard; sourceTree = "<group>"; };
+		13EE02A51A1D1044001470A3 /* programs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = programs.storyboard; sourceTree = "<group>"; };
+		13EE02A71A1D104D001470A3 /* catalog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = catalog.storyboard; sourceTree = "<group>"; };
+		13EE02A91A1D1053001470A3 /* forum.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = forum.storyboard; sourceTree = "<group>"; };
+		13EE02AB1A1D105D001470A3 /* community.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = community.storyboard; sourceTree = "<group>"; };
+		13EE02AD1A1D1063001470A3 /* feed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = feed.storyboard; sourceTree = "<group>"; };
+		13EE02B11A1D1261001470A3 /* events.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = events.storyboard; sourceTree = "<group>"; };
+		13EE02B31A1D17E1001470A3 /* schedule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = schedule.storyboard; sourceTree = "<group>"; };
 		13F1E54F1A13F9A400EB08AA /* MuseoSans_500.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_500.otf; sourceTree = "<group>"; };
 		13F1E5501A13F9A400EB08AA /* MuseoSans_700.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_700.otf; sourceTree = "<group>"; };
 		13F1E5511A13F9A400EB08AA /* MuseoSans_900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_900.otf; sourceTree = "<group>"; };
@@ -151,6 +171,16 @@
 				1324A8001A14516500262C7C /* people.storyboard */,
 				13A2F5F21A16A15D0057182D /* maps.storyboard */,
 				137115611A1C4C07008A71B9 /* Utility.storyboard */,
+				13EE029F1A1D101C001470A3 /* bookaroom.storyboard */,
+				13EE02A11A1D1035001470A3 /* guides.storyboard */,
+				13EE02A31A1D103E001470A3 /* learning.storyboard */,
+				13EE02A51A1D1044001470A3 /* programs.storyboard */,
+				13EE02A91A1D1053001470A3 /* forum.storyboard */,
+				13EE02AD1A1D1063001470A3 /* feed.storyboard */,
+				13EE02AB1A1D105D001470A3 /* community.storyboard */,
+				13EE02A71A1D104D001470A3 /* catalog.storyboard */,
+				13EE02B11A1D1261001470A3 /* events.storyboard */,
+				13EE02B31A1D17E1001470A3 /* schedule.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -388,14 +418,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13EE02A01A1D101C001470A3 /* bookaroom.storyboard in Resources */,
 				13F1E5571A13F9A400EB08AA /* MuseoSans-100.otf in Resources */,
+				13EE02AA1A1D1053001470A3 /* forum.storyboard in Resources */,
+				13EE02B21A1D1261001470A3 /* events.storyboard in Resources */,
 				13F1E5561A13F9A400EB08AA /* MuseoSans_900.otf in Resources */,
+				13EE02A21A1D1035001470A3 /* guides.storyboard in Resources */,
 				13E33C1C1A1533B5007B413B /* profile.storyboard in Resources */,
 				13369DB51A0D72F7000F9032 /* Main.storyboard in Resources */,
+				13EE02A81A1D104D001470A3 /* catalog.storyboard in Resources */,
+				13EE02AC1A1D105D001470A3 /* community.storyboard in Resources */,
+				13EE02A61A1D1044001470A3 /* programs.storyboard in Resources */,
 				1324A8011A14516500262C7C /* people.storyboard in Resources */,
 				13F1E5551A13F9A400EB08AA /* MuseoSans_700.otf in Resources */,
 				13369DBA1A0D72F7000F9032 /* LaunchScreen.xib in Resources */,
 				13F1E5541A13F9A400EB08AA /* MuseoSans_500.otf in Resources */,
+				13EE02AE1A1D1063001470A3 /* feed.storyboard in Resources */,
+				13EE02A41A1D103E001470A3 /* learning.storyboard in Resources */,
+				13EE02B41A1D17E1001470A3 /* schedule.storyboard in Resources */,
 				13F1E5631A144BF700EB08AA /* home.storyboard in Resources */,
 				13F1E5581A13F9A400EB08AA /* MuseoSans-300.otf in Resources */,
 				13369DB71A0D72F7000F9032 /* Images.xcassets in Resources */,
