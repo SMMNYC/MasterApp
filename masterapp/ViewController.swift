@@ -20,39 +20,7 @@ class ViewController: UIViewController, MenuViewControllerDelegate, ContentViewC
     @IBOutlet weak var placeholderView: UIView!
     
     @IBOutlet weak var placeholderContainer: UIView!
-     //@IBOutlet weak var leadingConstraint: NSLayoutConstraint!
     
-    
-    /*
-    @IBAction func testAnim(sender: AnyObject) {
-       
-        let v1 = placeholderView.subviews as [UIView]
-        if  (v1.count > 0 ) {
-        
-            let theView: UIView = v1[0] as UIView
-            theView.alpha = 0.9
-               let padding = UIEdgeInsetsMake(300, 0, 0, 0)
-            
-            
-            
-            
-            theView.snp_makeConstraints { make in
-                make.edges.equalTo(theView.superview!).with.insets(padding)
-                return // this return is a fix for implicit returns in Swift and is only required for single line constraints
-            }
-            
-                  }
-    
-       
-        
-       // for view in placeholderView.subviews as [UIView] {
-           // view.alpha = 0.5
-            
-        //}
-
-    }
-*/
-
 
     
     @IBOutlet weak var contentContainer: UIView!
@@ -114,6 +82,12 @@ class ViewController: UIViewController, MenuViewControllerDelegate, ContentViewC
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
+        if (segue.identifier == "FullViewSegue"){
+            return;
+        }
+        if (segue.identifier == "CenterViewSegue"){
+            return;
+        }
         if(contains(availableIdentifiers, segue.identifier!)) {
                        placeholderView.userInteractionEnabled=true
                     }
@@ -133,6 +107,12 @@ class ViewController: UIViewController, MenuViewControllerDelegate, ContentViewC
     }
     
     func navToView(theView:String, theScreen:String){
+        loadStoryboard (theView, theScreen:theScreen)
+    }
+    func navToFullView(theView:String, theScreen:String){
+        loadStoryboard (theView, theScreen:theScreen)
+    }
+    func navToCenterView(theView:String, theScreen:String){
         loadStoryboard (theView, theScreen:theScreen)
     }
     func loadContainer (theBoard:String){
@@ -185,7 +165,7 @@ class ViewController: UIViewController, MenuViewControllerDelegate, ContentViewC
        //return
         passId.storyboard = theSegue
         passId.screen = theScreen
-        var loadSegue="Segue1"
+        var loadSegue="HomeAreaSegue"
         if(contains(availableIdentifiers, theSegue)) {
             
             performSegueWithIdentifier(loadSegue, sender: nil)

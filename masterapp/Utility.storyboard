@@ -53,7 +53,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="w6m-9O-b8J" secondAttribute="centerY" id="15K-bu-C5W"/>
                             <constraint firstAttribute="centerX" secondItem="w6m-9O-b8J" secondAttribute="centerX" id="cgX-6s-i9E"/>
@@ -62,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kqm-I1-oQg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1058" y="256"/>
+            <point key="canvasLocation" x="1053" y="670"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="X5w-2N-hgO">
@@ -89,7 +89,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.91348656360000002" blue="0.068991819639999993" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="D8i-n7-Y4U" secondAttribute="centerY" id="2Uj-nR-f6s"/>
                             <constraint firstAttribute="centerX" secondItem="D8i-n7-Y4U" secondAttribute="centerX" id="Lfg-td-w8J"/>

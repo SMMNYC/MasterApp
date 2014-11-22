@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nQf-J9-49d">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -32,34 +31,12 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="Am4-be-BS7" kind="show" id="q9k-vB-g8c"/>
-                                        </connections>
-                                    </button>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1YL-6e-bKg">
-                                        <rect key="frame" x="253" y="0.0" width="123" height="29"/>
-                                        <segments>
-                                            <segment title="First"/>
-                                            <segment title="Second"/>
-                                        </segments>
-                                    </segmentedControl>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAs-hI-7hl">
-                                        <rect key="frame" x="147" y="217" width="46" height="30"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="bNT-MF-iUb" kind="presentation" identifier="test" id="ktY-NQ-lgl"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="JYb-uz-Z6b" secondAttribute="trailing" constant="16" id="CQf-aa-x0G"/>
-                                    <constraint firstItem="GAs-hI-7hl" firstAttribute="leading" secondItem="zlH-zn-DjP" secondAttribute="leading" constant="147" id="NNd-NM-3eH"/>
                                     <constraint firstItem="JYb-uz-Z6b" firstAttribute="top" secondItem="zlH-zn-DjP" secondAttribute="top" constant="195" id="Qp4-0q-PcD"/>
-                                    <constraint firstItem="GAs-hI-7hl" firstAttribute="top" secondItem="zlH-zn-DjP" secondAttribute="top" constant="217" id="b0y-Sp-Bra"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aLr-bO-KSh" secondAttribute="trailing" constant="138" id="cYc-aA-5h3"/>
                                     <constraint firstAttribute="trailing" secondItem="aLr-bO-KSh" secondAttribute="trailing" constant="138" id="e1d-Pj-LaP"/>
                                     <constraint firstAttribute="bottom" secondItem="aLr-bO-KSh" secondAttribute="bottom" constant="190" id="mhT-D4-zgH"/>
@@ -79,133 +56,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LrB-NH-IYg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="436" y="528"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="LuH-Ae-ybi">
-            <objects>
-                <viewController id="bNT-MF-iUb" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="mcu-wU-Bea"/>
-                        <viewControllerLayoutGuide type="bottom" id="mGa-Ew-2wT"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="zQ1-eL-QfT">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="slc-9F-M1Q">
-                                <rect key="frame" x="0.0" y="5" width="600" height="600"/>
-                            </mapView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="0.56436697849999995" blue="0.096570631879999994" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="slc-9F-M1Q" secondAttribute="trailing" id="DcV-B3-BYS"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="slc-9F-M1Q" secondAttribute="bottom" id="Kmy-7H-QOu"/>
-                            <constraint firstItem="slc-9F-M1Q" firstAttribute="top" secondItem="zQ1-eL-QfT" secondAttribute="topMargin" id="R4D-Th-yPA"/>
-                            <constraint firstItem="slc-9F-M1Q" firstAttribute="leading" secondItem="zQ1-eL-QfT" secondAttribute="leadingMargin" id="zb7-5v-zRQ"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="B19-qH-FHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="364" y="1191"/>
-        </scene>
-        <!--Title-->
-        <scene sceneID="gP9-ae-0dn">
-            <objects>
-                <viewController id="hcq-j4-Xg7" customClass="HomeViewController" customModule="masterapp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ujS-iu-Kye"/>
-                        <viewControllerLayoutGuide type="bottom" id="O9V-8p-cgO"/>
-                    </layoutGuides>
-                    <view key="view" opaque="NO" contentMode="center" id="U1C-EC-D4s">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iu0-Is-mUV">
-                                <rect key="frame" x="499" y="199" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cke-kz-zCp">
-                                <rect key="frame" x="56" y="109" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="rQS-7g-Rd6" kind="show" id="XHL-sy-hD6"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="0.4755450517" blue="0.99712995780000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="iu0-Is-mUV" firstAttribute="top" secondItem="ujS-iu-Kye" secondAttribute="bottom" constant="179" id="7Vb-Yn-3C0"/>
-                            <constraint firstItem="cke-kz-zCp" firstAttribute="leading" secondItem="U1C-EC-D4s" secondAttribute="leadingMargin" constant="40" id="LhC-I4-bWN"/>
-                            <constraint firstAttribute="trailing" secondItem="iu0-Is-mUV" secondAttribute="trailing" constant="59" id="jFC-v5-VaG"/>
-                            <constraint firstItem="cke-kz-zCp" firstAttribute="top" secondItem="ujS-iu-Kye" secondAttribute="bottom" constant="45" id="l0P-HG-1aB"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Title" id="FSN-yp-2aW">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="tMj-cD-YaH">
-                            <connections>
-                                <action selector="handleDone:" destination="hcq-j4-Xg7" id="fxk-Xe-fdN"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="600" height="600"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nKY-kq-sNz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1766" y="528"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="kQJ-w2-VCm">
-            <objects>
-                <viewController id="rQS-7g-Rd6" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Gqz-hp-BwE"/>
-                        <viewControllerLayoutGuide type="bottom" id="2uk-xO-VMX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="1nc-9J-Mhe">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zg-Ip-EQ2">
-                                <rect key="frame" x="483" y="187" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="4zg-Ip-EQ2" secondAttribute="trailing" constant="75" id="3Hf-gv-Xdf"/>
-                            <constraint firstItem="4zg-Ip-EQ2" firstAttribute="top" secondItem="Gqz-hp-BwE" secondAttribute="bottom" constant="123" id="kwn-FJ-jAq"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8kl-f0-3ne" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1739" y="1295"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Bll-YV-7mx">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Am4-be-BS7" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QId-7f-eLz">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="hcq-j4-Xg7" kind="relationship" relationship="rootViewController" id="7AB-G4-5ij"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bma-AR-jxV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1124" y="528"/>
         </scene>
     </scenes>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>

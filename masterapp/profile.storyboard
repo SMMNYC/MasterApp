@@ -22,24 +22,6 @@
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4mh-zf-Lab">
                                         <rect key="frame" x="-3" y="-5" width="607" height="605"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQq-cf-moL">
-                                                <rect key="frame" x="518" y="28" width="59" height="30"/>
-                                                <state key="normal" title="Nav Test">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="navTest:" destination="nQf-J9-49d" eventType="touchUpInside" id="W1M-Cv-qez"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmT-JE-Et1">
-                                                <rect key="frame" x="123" y="474" width="46" height="30"/>
-                                                <state key="normal" title="Button">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="test:" destination="nQf-J9-49d" eventType="touchUpInside" id="B6k-1c-GAo"/>
-                                                </connections>
-                                            </button>
                                             <view clipsSubviews="YES" contentMode="center" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c1j-qg-c1q" customClass="HJREmbedView" customModule="masterapp" customModuleProvider="target">
                                                 <rect key="frame" x="23" y="123" width="304" height="303"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -59,7 +41,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile from Storyboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYb-uz-Z6b">
                                                 <rect key="frame" x="42" y="47" width="179" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view clipsSubviews="YES" contentMode="center" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xKV-DA-Goq" customClass="HJREmbedView" customModule="masterapp" customModuleProvider="target">
@@ -71,13 +53,11 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.43874125670000003" green="0.83868781889999999" blue="0.3401523535" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="GQq-cf-moL" secondAttribute="trailing" constant="30" id="0Db-bj-hCB"/>
                                             <constraint firstAttribute="bottom" secondItem="xKV-DA-Goq" secondAttribute="bottom" constant="83" id="A9m-3h-wD7"/>
                                             <constraint firstItem="GIi-8H-I8V" firstAttribute="leading" secondItem="c1j-qg-c1q" secondAttribute="trailing" constant="13" id="K9z-Bm-CGj"/>
                                             <constraint firstItem="GIi-8H-I8V" firstAttribute="top" secondItem="c1j-qg-c1q" secondAttribute="top" id="MQi-Z8-HNf"/>
-                                            <constraint firstItem="GQq-cf-moL" firstAttribute="top" secondItem="4mh-zf-Lab" secondAttribute="top" constant="260" id="Ncj-KG-4iT"/>
                                             <constraint firstAttribute="bottom" secondItem="c1j-qg-c1q" secondAttribute="bottom" constant="87" id="m1U-LV-1Fl"/>
                                             <constraint firstAttribute="trailing" secondItem="xKV-DA-Goq" secondAttribute="trailing" constant="30" id="o95-Vl-VOG"/>
                                             <constraint firstItem="c1j-qg-c1q" firstAttribute="leading" secondItem="4mh-zf-Lab" secondAttribute="leading" constant="34" id="wxm-C8-cz8"/>

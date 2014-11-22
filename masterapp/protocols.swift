@@ -14,4 +14,11 @@ protocol MenuViewControllerDelegate{
 
 protocol ContentViewControllerDelegate{
     func navToView(theView:String, theScreen:String)
+    func navToCenterView(theView:String, theScreen:String)
+    func navToFullView(theView:String, theScreen:String)
+
+}
+
+protocol CenterViewControllerDelegate{
+    func closeCenter()
 }
