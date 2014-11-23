@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="IVe-dl-W4U">
+            <objects>
+                <viewController storyboardIdentifier="entry" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nQf-J9-49d" customClass="HomeViewController" customModule="masterapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="agk-2W-DPG"/>
+                        <viewControllerLayoutGuide type="bottom" id="5FH-WE-vuC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eTv-0h-Ki2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="zlH-zn-DjP">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9q-mh-Bv2">
+                                        <rect key="frame" x="408" y="475" width="126" height="30"/>
+                                        <state key="normal" title="Show Center View">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home from Storyboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYb-uz-Z6b">
+                                        <rect key="frame" x="408" y="195" width="176" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="JYb-uz-Z6b" secondAttribute="trailing" constant="16" id="CQf-aa-x0G"/>
+                                    <constraint firstItem="JYb-uz-Z6b" firstAttribute="top" secondItem="zlH-zn-DjP" secondAttribute="top" constant="195" id="Qp4-0q-PcD"/>
+                                    <constraint firstAttribute="bottom" secondItem="m9q-mh-Bv2" secondAttribute="bottom" constant="95" id="a8U-fF-ua4"/>
+                                    <constraint firstAttribute="trailing" secondItem="m9q-mh-Bv2" secondAttribute="trailing" constant="66" id="shA-vS-dDH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zlH-zn-DjP" firstAttribute="leading" secondItem="eTv-0h-Ki2" secondAttribute="leading" id="18f-pA-NNM"/>
+                            <constraint firstItem="zlH-zn-DjP" firstAttribute="top" secondItem="eTv-0h-Ki2" secondAttribute="top" id="QQf-Eh-gpm"/>
+                            <constraint firstAttribute="bottom" secondItem="zlH-zn-DjP" secondAttribute="bottom" id="hXv-x7-xAX"/>
+                            <constraint firstAttribute="trailing" secondItem="zlH-zn-DjP" secondAttribute="trailing" id="lFG-we-GhZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LrB-NH-IYg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="161" y="159"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+</document>

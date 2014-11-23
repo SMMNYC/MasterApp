@@ -22,6 +22,9 @@ class ViewController: UIViewController, MenuViewControllerDelegate, ContentViewC
     @IBOutlet weak var placeholderContainer: UIView!
     
 
+    @IBAction func testFullLoad(sender: AnyObject) {
+        navToFullView ("XXX", theScreen: "XXX")
+    }
     
     @IBOutlet weak var contentContainer: UIView!
      @IBOutlet weak var menuViewContainer: UIView!
@@ -58,8 +61,6 @@ class ViewController: UIViewController, MenuViewControllerDelegate, ContentViewC
        initPositionMenu()
      
        loadStoryboard ("home", theScreen:"entry")
-
-     
     }
 
     override func didReceiveMemoryWarning() {
@@ -83,9 +84,13 @@ class ViewController: UIViewController, MenuViewControllerDelegate, ContentViewC
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if (segue.identifier == "FullViewSegue"){
+            // let vc = segue.destinationViewController as CenterViewController
             return;
         }
         if (segue.identifier == "CenterViewSegue"){
+           
+          //  vc.delegate = self
+
             return;
         }
         if(contains(availableIdentifiers, segue.identifier!)) {
@@ -108,12 +113,16 @@ class ViewController: UIViewController, MenuViewControllerDelegate, ContentViewC
     
     func navToView(theView:String, theScreen:String){
         loadStoryboard (theView, theScreen:theScreen)
+        
     }
     func navToFullView(theView:String, theScreen:String){
-        loadStoryboard (theView, theScreen:theScreen)
+        //loadStoryboard (theView, theScreen:theScreen)
+        
+        performSegueWithIdentifier("FullViewSegue", sender: nil)
+
     }
     func navToCenterView(theView:String, theScreen:String){
-        loadStoryboard (theView, theScreen:theScreen)
+       performSegueWithIdentifier("CenterViewSegue", sender: nil)
     }
     func loadContainer (theBoard:String){
         /*

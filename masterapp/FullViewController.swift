@@ -18,7 +18,7 @@ class FullViewController: ContenteViewController {
         super.viewDidLoad()
  
         //Todo get from sqgue
-      loadStoryboard ("FullScreenSample", theScreen: "entry");
+        loadStoryboard ("FullScreenSample", theScreen: "entry");
         // Do any additional setup after loading the view.
     }
 

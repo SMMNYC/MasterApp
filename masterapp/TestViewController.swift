@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  TestViewController.swift
 //  masterapp
 //
 //  Created by SciMedMedia on 11/22/14.
@@ -8,19 +8,10 @@
 
 import UIKit
 
-class HomeViewController: ContenteViewController {
-    @IBOutlet weak var testButton: UIButton!
+class TestViewController: UIViewController {
+    @IBOutlet weak var sss: UIButton!
 
-    @IBAction func testNavToCenter(sender: AnyObject) {
-        if (delegate != nil) {
-            delegate!.navToCenterView("xx", theScreen: "xx")
-        }
-    }
-    @IBAction func testNaveToFull(sender: AnyObject) {
-        if (delegate != nil) {
-            delegate!.navToFullView("xx", theScreen: "xx")
-        }
-    }
+    @IBOutlet weak var theLable: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Test View Controller-->
         <scene sceneID="0zM-nU-qxP">
             <objects>
-                <viewController storyboardIdentifier="entry" id="nSn-dc-2Un" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="entry" id="nSn-dc-2Un" customClass="TestViewController" customModule="masterapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C6i-5K-lWh"/>
                         <viewControllerLayoutGuide type="bottom" id="F9Q-Da-6Bh"/>
@@ -41,6 +41,9 @@
                             <constraint firstItem="RZB-0a-orj" firstAttribute="leading" secondItem="HbF-Ww-YaX" secondAttribute="leading" id="pK9-sT-yJZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="theLable" destination="GtN-E6-o1E" id="9oS-gz-7xg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Z6-I2-ys6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

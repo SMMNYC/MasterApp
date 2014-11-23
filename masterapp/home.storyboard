@@ -1,62 +1,65 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nQf-J9-49d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
-        <scene sceneID="IVe-dl-W4U">
+        <scene sceneID="iDB-ez-gZF">
             <objects>
-                <viewController storyboardIdentifier="entry" id="nQf-J9-49d" customClass="HomeViewController" customModule="masterapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="entry" id="B26-s1-agG" customClass="HomeViewController" customModule="masterapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="agk-2W-DPG"/>
-                        <viewControllerLayoutGuide type="bottom" id="5FH-WE-vuC"/>
+                        <viewControllerLayoutGuide type="top" id="ptB-ds-xoL"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Eb-jq-EFh"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="eTv-0h-Ki2">
+                    <view key="view" contentMode="scaleToFill" id="2tZ-Vx-A8E" customClass="Home">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="zlH-zn-DjP">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home from Storyboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYb-uz-Z6b">
-                                        <rect key="frame" x="408" y="195" width="176" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLr-bO-KSh">
-                                        <rect key="frame" x="432" y="380" width="30" height="30"/>
-                                        <state key="normal" title="test">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="JYb-uz-Z6b" secondAttribute="trailing" constant="16" id="CQf-aa-x0G"/>
-                                    <constraint firstItem="JYb-uz-Z6b" firstAttribute="top" secondItem="zlH-zn-DjP" secondAttribute="top" constant="195" id="Qp4-0q-PcD"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aLr-bO-KSh" secondAttribute="trailing" constant="138" id="cYc-aA-5h3"/>
-                                    <constraint firstAttribute="trailing" secondItem="aLr-bO-KSh" secondAttribute="trailing" constant="138" id="e1d-Pj-LaP"/>
-                                    <constraint firstAttribute="bottom" secondItem="aLr-bO-KSh" secondAttribute="bottom" constant="190" id="mhT-D4-zgH"/>
-                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="aLr-bO-KSh" secondAttribute="bottom" constant="190" id="nyw-r0-j3Q"/>
-                                </constraints>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVW-av-q3N">
+                                <rect key="frame" x="238" y="285" width="125" height="30"/>
+                                <state key="normal" title="Open Center View">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="testNavToCenter:" destination="B26-s1-agG" eventType="touchUpInside" id="5MQ-FM-nlZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home from Storyboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Np-Zl-3Kf">
+                                <rect key="frame" x="390" y="212" width="176" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clr-fd-wxn">
+                                <rect key="frame" x="390" y="285" width="103" height="30"/>
+                                <state key="normal" title="Open Full View">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="testNaveToFull:" destination="B26-s1-agG" eventType="touchUpInside" id="ReN-2j-ELL"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="zlH-zn-DjP" firstAttribute="leading" secondItem="eTv-0h-Ki2" secondAttribute="leading" id="18f-pA-NNM"/>
-                            <constraint firstItem="zlH-zn-DjP" firstAttribute="top" secondItem="eTv-0h-Ki2" secondAttribute="top" id="QQf-Eh-gpm"/>
-                            <constraint firstAttribute="bottom" secondItem="zlH-zn-DjP" secondAttribute="bottom" id="hXv-x7-xAX"/>
-                            <constraint firstAttribute="trailing" secondItem="zlH-zn-DjP" secondAttribute="trailing" id="lFG-we-GhZ"/>
+                            <constraint firstItem="clr-fd-wxn" firstAttribute="leading" secondItem="vVW-av-q3N" secondAttribute="trailing" constant="27" id="4Zs-X3-FPz"/>
+                            <constraint firstItem="clr-fd-wxn" firstAttribute="centerY" secondItem="vVW-av-q3N" secondAttribute="centerY" id="Jck-uV-UQ6"/>
+                            <constraint firstAttribute="centerX" secondItem="vVW-av-q3N" secondAttribute="centerX" id="SZK-vQ-lz7"/>
+                            <constraint firstAttribute="trailing" secondItem="0Np-Zl-3Kf" secondAttribute="trailing" constant="34" id="c3F-Vm-8zj"/>
+                            <constraint firstItem="0Np-Zl-3Kf" firstAttribute="top" secondItem="ptB-ds-xoL" secondAttribute="bottom" constant="192" id="hh4-dp-yai"/>
+                            <constraint firstAttribute="centerY" secondItem="vVW-av-q3N" secondAttribute="centerY" id="kVL-BV-BzF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="testButton" destination="vVW-av-q3N" id="Imz-aW-YKv"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LrB-NH-IYg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PV0-zi-9sf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="436" y="528"/>
+            <point key="canvasLocation" x="455" y="504"/>
         </scene>
     </scenes>
-    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
 </document>
