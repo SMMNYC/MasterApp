@@ -22,9 +22,6 @@ class ViewController: UIViewController, MenuViewControllerDelegate, ContentViewC
     @IBOutlet weak var placeholderContainer: UIView!
     
 
-    @IBAction func testFullLoad(sender: AnyObject) {
-        navToFullView ("XXX", theScreen: "XXX")
-    }
     
     @IBOutlet weak var contentContainer: UIView!
      @IBOutlet weak var menuViewContainer: UIView!
@@ -85,10 +82,18 @@ class ViewController: UIViewController, MenuViewControllerDelegate, ContentViewC
         
         if (segue.identifier == "FullViewSegue"){
             // let vc = segue.destinationViewController as CenterViewController
+          // var fullSegRef = segue as FullScreenSegue
+          // fullSegRef.theID=passId
+            let vcFull = segue.destinationViewController as FullViewController
+            vcFull.delegate = self
             return;
         }
         if (segue.identifier == "CenterViewSegue"){
-           
+            let vcCenter = segue.destinationViewController as CenterViewController
+            vcCenter.passId=self.passId
+            vcCenter.delegate = self
+
+
           //  vc.delegate = self
 
             return;
@@ -117,11 +122,14 @@ class ViewController: UIViewController, MenuViewControllerDelegate, ContentViewC
     }
     func navToFullView(theView:String, theScreen:String){
         //loadStoryboard (theView, theScreen:theScreen)
-        
+        passId.storyboard = theView
+        passId.screen = theScreen
         performSegueWithIdentifier("FullViewSegue", sender: nil)
 
     }
     func navToCenterView(theView:String, theScreen:String){
+        passId.storyboard = theView
+        passId.screen = theScreen
        performSegueWithIdentifier("CenterViewSegue", sender: nil)
     }
     func loadContainer (theBoard:String){

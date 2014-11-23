@@ -16,7 +16,7 @@ protocol ContentViewControllerDelegate{
     func navToView(theView:String, theScreen:String)
     func navToCenterView(theView:String, theScreen:String)
     func navToFullView(theView:String, theScreen:String)
-
+    //var passId (storyboard: String, screen: String)
 }
 
 protocol CenterViewControllerDelegate{

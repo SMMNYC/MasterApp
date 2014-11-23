@@ -13,12 +13,12 @@ class HomeViewController: ContenteViewController {
 
     @IBAction func testNavToCenter(sender: AnyObject) {
         if (delegate != nil) {
-            delegate!.navToCenterView("xx", theScreen: "xx")
+            delegate!.navToCenterView("CenterSample", theScreen: "entry2")
         }
     }
     @IBAction func testNaveToFull(sender: AnyObject) {
         if (delegate != nil) {
-            delegate!.navToFullView("xx", theScreen: "xx")
+            delegate!.navToFullView("FullSample", theScreen: "entry")
         }
     }
     override func viewDidLoad() {

@@ -32,9 +32,23 @@
                                     <constraint firstAttribute="centerX" secondItem="GtN-E6-o1E" secondAttribute="centerX" id="aPh-ae-zaS"/>
                                 </constraints>
                             </view>
+                            <view clipsSubviews="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="DSs-Vy-UmO" customClass="HJREmbedView" customModule="masterapp" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="400" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="gdZ-3V-o5a"/>
+                                    <constraint firstAttribute="height" constant="200" id="msl-UI-Cae"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="storyboard" value="Utility"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="screen" value="entry"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="DSs-Vy-UmO" firstAttribute="top" secondItem="HbF-Ww-YaX" secondAttribute="top" constant="10" id="GaO-wb-jNE"/>
+                            <constraint firstItem="DSs-Vy-UmO" firstAttribute="leading" secondItem="HbF-Ww-YaX" secondAttribute="leading" constant="10" id="LB9-Rd-25o"/>
                             <constraint firstItem="RZB-0a-orj" firstAttribute="top" secondItem="HbF-Ww-YaX" secondAttribute="top" id="Nh0-ON-10Q"/>
                             <constraint firstItem="F9Q-Da-6Bh" firstAttribute="top" secondItem="RZB-0a-orj" secondAttribute="bottom" id="Y14-J1-GTU"/>
                             <constraint firstAttribute="trailing" secondItem="RZB-0a-orj" secondAttribute="trailing" id="fNB-9T-nGs"/>
@@ -44,7 +58,63 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Z6-I2-ys6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="513" y="498"/>
+            <point key="canvasLocation" x="496" y="511"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UUM-lI-Xj7">
+            <objects>
+                <viewController storyboardIdentifier="entry2" id="9C1-xb-qyD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Obp-UL-cEQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ka1-xt-qiY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hb0-Tn-4Fo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJU-Ts-9za">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded Second Center View From Storyboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRW-ez-XPu">
+                                        <rect key="frame" x="123" y="289" width="354" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.4755450517" blue="0.99712995780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="WRW-ez-XPu" secondAttribute="centerY" id="hFn-By-uTp"/>
+                                    <constraint firstAttribute="centerX" secondItem="WRW-ez-XPu" secondAttribute="centerX" id="vON-Z0-ZH8"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="q2S-WE-1hF" customClass="HJREmbedView" customModule="masterapp" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="400" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="gQh-8B-64i"/>
+                                    <constraint firstAttribute="height" constant="200" id="uYA-je-5RE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="storyboard" value="Utility"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="screen" value="entry"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q2S-WE-1hF" firstAttribute="top" secondItem="Hb0-Tn-4Fo" secondAttribute="top" constant="10" id="3AH-9p-P7K"/>
+                            <constraint firstAttribute="trailing" secondItem="fJU-Ts-9za" secondAttribute="trailing" id="ReQ-wd-DZQ"/>
+                            <constraint firstItem="fJU-Ts-9za" firstAttribute="top" secondItem="Hb0-Tn-4Fo" secondAttribute="top" id="Usi-SB-ECZ"/>
+                            <constraint firstItem="Ka1-xt-qiY" firstAttribute="top" secondItem="fJU-Ts-9za" secondAttribute="bottom" id="kk1-1O-Vjw"/>
+                            <constraint firstItem="fJU-Ts-9za" firstAttribute="leading" secondItem="Hb0-Tn-4Fo" secondAttribute="leading" id="u2v-PK-RdA"/>
+                            <constraint firstItem="q2S-WE-1hF" firstAttribute="leading" secondItem="Hb0-Tn-4Fo" secondAttribute="leading" constant="10" id="y5X-MW-yMP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k0y-Ps-QsW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1174" y="506"/>
         </scene>
     </scenes>
 </document>

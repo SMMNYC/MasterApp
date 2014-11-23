@@ -17,8 +17,10 @@ class CenterScreenSegue: UIStoryboardSegue {
         
         var mainView: UIStoryboard!
         //todo get from prepareforsegue
-        theID.storyboard = "CenterSample"
-        theID.screen = "entry"
+     // theID.storyboard = "CenterSample"
+     // theID.screen = "entry"
+        theID = parentController.passId;
+        
         mainView = UIStoryboard(name: theID.storyboard, bundle: nil)
         let t = mainView.instantiateViewControllerWithIdentifier(theID.screen) as? UIViewController
         
@@ -36,3 +38,5 @@ class CenterScreenSegue: UIStoryboardSegue {
     
     
 }
+
+

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CenterViewController: UIViewController {
+class CenterViewController: ContenteViewController {
 
     var passId = (storyboard: "", screen: "")
     var currentViewController: UIViewController?
@@ -22,8 +22,9 @@ class CenterViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-     loadStoryboard ("FullScreenSample", theScreen: "entry");
+     //loadStoryboard ("FullScreenSample", theScreen: "entry");
         // Do any additional setup after loading the view.
+         loadStoryboard (self.passId.storyboard, theScreen: self.passId.screen);
     }
 
    
@@ -36,7 +37,7 @@ class CenterViewController: UIViewController {
         var theSegue = theBoard.lowercaseString
         //loadContainer(theSegue)
         //return
-        passId.storyboard = theSegue
+        passId.storyboard = theBoard
         passId.screen = theScreen
         var loadSegue="CenterScreenEmbedSegue"
         // if(contains(availableIdentifiers, theSegue)) {

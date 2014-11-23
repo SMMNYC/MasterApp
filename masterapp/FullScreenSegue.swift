@@ -10,7 +10,8 @@ class FullScreenSegue: UIStoryboardSegue {
     
     override func perform() {
         
-        let parentController = self.sourceViewController as FullViewController
+      let parentController = self.sourceViewController as FullViewController
+        
       
         //db?
         //  let destinationController = self.destinationViewController as UIViewController

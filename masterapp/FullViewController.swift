@@ -16,9 +16,10 @@ class FullViewController: ContenteViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
- 
+// passId=delegate.p
         //Todo get from sqgue
-        loadStoryboard ("FullScreenSample", theScreen: "entry");
+       // loadStoryboard ("FullScreenSample", theScreen: "entry");
+        loadStoryboard (self.passId.storyboard, theScreen: self.passId.screen);
         // Do any additional setup after loading the view.
     }
 
