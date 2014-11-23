@@ -9,6 +9,8 @@
 import UIKit
 import Snappy
 
+
+
 class ViewController: UIViewController, MenuViewControllerDelegate, ContentViewControllerDelegate {
     var passId = (storyboard: "", screen: "")
     
@@ -58,7 +60,7 @@ class ViewController: UIViewController, MenuViewControllerDelegate, ContentViewC
        initPositionMenu()
      
        loadStoryboard ("home", theScreen:"entry")
-    }
+       }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -153,7 +155,7 @@ class ViewController: UIViewController, MenuViewControllerDelegate, ContentViewC
         
         var mainView: UIStoryboard!
         mainView = UIStoryboard(name: theBoard, bundle: nil)
-        currentViewController =  mainView.instantiateInitialViewController() as UIViewController
+        currentViewController =  mainView.instantiateInitialViewController() as? UIViewController
        
         
         
