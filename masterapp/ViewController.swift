@@ -153,7 +153,7 @@ class ViewController: UIViewController, MenuViewControllerDelegate, ContentViewC
         
         var mainView: UIStoryboard!
         mainView = UIStoryboard(name: theBoard, bundle: nil)
-        currentViewController =  mainView.instantiateInitialViewController() as UIViewController
+        currentViewController =  mainView.instantiateInitialViewController() as? UIViewController
        
         
         

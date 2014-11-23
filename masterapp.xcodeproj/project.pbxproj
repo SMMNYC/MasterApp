@@ -138,7 +138,7 @@
 		13A6333F1A2126AC00BE90FE /* CenterSample.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CenterSample.storyboard; sourceTree = "<group>"; };
 		13E33C1B1A1533B4007B413B /* profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
 		13EE02381A1C4FAB001470A3 /* ProfileKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileKViewController.swift; sourceTree = "<group>"; };
-		13EE023B1A1C694F001470A3 /* HJREmbedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJREmbedView.swift; sourceTree = "<group>"; };
+		13EE023B1A1C694F001470A3 /* HJREmbedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HJREmbedView.swift; path = ../HJREmbedView.swift; sourceTree = "<group>"; };
 		13EE029F1A1D101C001470A3 /* bookaroom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = bookaroom.storyboard; sourceTree = "<group>"; };
 		13EE02A11A1D1035001470A3 /* guides.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = guides.storyboard; sourceTree = "<group>"; };
 		13EE02A31A1D103E001470A3 /* learning.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = learning.storyboard; sourceTree = "<group>"; };
@@ -215,7 +215,6 @@
 		13369D9E1A0D72F7000F9032 = {
 			isa = PBXGroup;
 			children = (
-				13EE023B1A1C694F001470A3 /* HJREmbedView.swift */,
 				137115461A1BEBAF008A71B9 /* Frameworks */,
 				13369DA91A0D72F7000F9032 /* masterapp */,
 				13369DC21A0D72F7000F9032 /* masterappTests */,
@@ -322,6 +321,7 @@
 		13A6333C1A21213A00BE90FE /* Segues */ = {
 			isa = PBXGroup;
 			children = (
+				13EE023B1A1C694F001470A3 /* HJREmbedView.swift */,
 				139B16091A12F4BB0014AF49 /* MasterSegue.swift */,
 				13A633371A210D0500BE90FE /* FullScreenSegue.swift */,
 				13A6333D1A21218000BE90FE /* CenterScreenSegue.swift */,
