@@ -25,6 +25,8 @@
 		139072591A21379100076152 /* NewHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139072581A21379100076152 /* NewHomeViewController.swift */; };
 		139072631A21542100076152 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139072621A21542100076152 /* HomeViewController.swift */; };
 		139072671A21552300076152 /* home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139072661A21552300076152 /* home.storyboard */; };
+		1393348E1A21B34F00AAD300 /* Alamofire.framework in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = 139334871A21B28A00AAD300 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1393349C1A21B75200AAD300 /* Haneke.framework in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = 139334971A21B73A00AAD300 /* Haneke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		139B160A1A12F4BB0014AF49 /* MasterSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139B16091A12F4BB0014AF49 /* MasterSegue.swift */; };
 		13A1D5E21A12A93C00D110FB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A1D5E11A12A93C00D110FB /* MenuViewController.swift */; };
 		13A1D5E51A12B8B600D110FB /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A1D5E41A12B8B600D110FB /* StringUtils.swift */; };
@@ -55,7 +57,6 @@
 		13F1E5571A13F9A400EB08AA /* MuseoSans-100.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E5521A13F9A400EB08AA /* MuseoSans-100.otf */; };
 		13F1E5581A13F9A400EB08AA /* MuseoSans-300.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E5531A13F9A400EB08AA /* MuseoSans-300.otf */; };
 		13F1E5611A143BE300EB08AA /* SegueUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F1E5601A143BE300EB08AA /* SegueUtils.swift */; };
-		13F1E5631A144BF700EB08AA /* xhome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E5621A144BF700EB08AA /* xhome.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,55 @@
 			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
 			remoteInfo = Snappy;
 		};
+		139334861A21B28A00AAD300 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139334811A21B28A00AAD300 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		139334881A21B28A00AAD300 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139334811A21B28A00AAD300 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = AlamofireTests;
+		};
+		1393348B1A21B30300AAD300 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139334811A21B28A00AAD300 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		139334961A21B73A00AAD300 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1393348F1A21B73A00AAD300 /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A095C9561980418C00CD0F4C;
+			remoteInfo = Haneke;
+		};
+		139334981A21B73A00AAD300 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1393348F1A21B73A00AAD300 /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A095C9611980418C00CD0F4C;
+			remoteInfo = HanekeTests;
+		};
+		1393349A1A21B73A00AAD300 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1393348F1A21B73A00AAD300 /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0026E9A19C9BFBC004DE0C6;
+			remoteInfo = HanekeDemo;
+		};
+		1393349D1A21B75D00AAD300 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1393348F1A21B73A00AAD300 /* Haneke.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A095C9551980418C00CD0F4C;
+			remoteInfo = Haneke;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -99,6 +149,18 @@
 				1371155B1A1BED2C008A71B9 /* Snappy.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1393348D1A21B32D00AAD300 /* Copy Files (1 item) */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1393349C1A21B75200AAD300 /* Haneke.framework in Copy Files (1 item) */,
+				1393348E1A21B34F00AAD300 /* Alamofire.framework in Copy Files (1 item) */,
+			);
+			name = "Copy Files (1 item)";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -125,6 +187,8 @@
 		139072581A21379100076152 /* NewHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewHomeViewController.swift; sourceTree = "<group>"; };
 		139072621A21542100076152 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		139072661A21552300076152 /* home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = home.storyboard; sourceTree = "<group>"; };
+		139334811A21B28A00AAD300 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../../../HJR_test/MasterApp/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		1393348F1A21B73A00AAD300 /* Haneke.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Haneke.xcodeproj; path = ../../../HJR_test/MasterApp/Haneke/Haneke.xcodeproj; sourceTree = "<group>"; };
 		139B16091A12F4BB0014AF49 /* MasterSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterSegue.swift; path = ../MasterSegue.swift; sourceTree = "<group>"; };
 		13A1D5E11A12A93C00D110FB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		13A1D5E41A12B8B600D110FB /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
@@ -155,7 +219,6 @@
 		13F1E5521A13F9A400EB08AA /* MuseoSans-100.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-100.otf"; sourceTree = "<group>"; };
 		13F1E5531A13F9A400EB08AA /* MuseoSans-300.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-300.otf"; sourceTree = "<group>"; };
 		13F1E5601A143BE300EB08AA /* SegueUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueUtils.swift; sourceTree = "<group>"; };
-		13F1E5621A144BF700EB08AA /* xhome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = xhome.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,7 +244,6 @@
 			isa = PBXGroup;
 			children = (
 				139072661A21552300076152 /* home.storyboard */,
-				13F1E5621A144BF700EB08AA /* xhome.storyboard */,
 				13EE029F1A1D101C001470A3 /* bookaroom.storyboard */,
 				13EE02A71A1D104D001470A3 /* catalog.storyboard */,
 				13EE02AB1A1D105D001470A3 /* community.storyboard */,
@@ -278,6 +340,8 @@
 		137115461A1BEBAF008A71B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1393348F1A21B73A00AAD300 /* Haneke.xcodeproj */,
+				139334811A21B28A00AAD300 /* Alamofire.xcodeproj */,
 				137115471A1BEBC4008A71B9 /* Snappy.xcodeproj */,
 			);
 			name = Frameworks;
@@ -289,6 +353,25 @@
 			children = (
 				1371154D1A1BEBC5008A71B9 /* Snappy.framework */,
 				1371154F1A1BEBC5008A71B9 /* SnappyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		139334821A21B28A00AAD300 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				139334871A21B28A00AAD300 /* Alamofire.framework */,
+				139334891A21B28A00AAD300 /* AlamofireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		139334901A21B73A00AAD300 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				139334971A21B73A00AAD300 /* Haneke.framework */,
+				139334991A21B73A00AAD300 /* HanekeTests.xctest */,
+				1393349B1A21B73A00AAD300 /* HanekeDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -360,10 +443,13 @@
 				13369DA41A0D72F7000F9032 /* Frameworks */,
 				13369DA51A0D72F7000F9032 /* Resources */,
 				1371155E1A1BED2D008A71B9 /* Embed Frameworks */,
+				1393348D1A21B32D00AAD300 /* Copy Files (1 item) */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1393349E1A21B75D00AAD300 /* PBXTargetDependency */,
+				1393348C1A21B30300AAD300 /* PBXTargetDependency */,
 				1371155D1A1BED2C008A71B9 /* PBXTargetDependency */,
 			);
 			name = masterapp;
@@ -421,6 +507,14 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 139334821A21B28A00AAD300 /* Products */;
+					ProjectRef = 139334811A21B28A00AAD300 /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = 139334901A21B73A00AAD300 /* Products */;
+					ProjectRef = 1393348F1A21B73A00AAD300 /* Haneke.xcodeproj */;
+				},
+				{
 					ProductGroup = 137115481A1BEBC4008A71B9 /* Products */;
 					ProjectRef = 137115471A1BEBC4008A71B9 /* Snappy.xcodeproj */;
 				},
@@ -446,6 +540,41 @@
 			fileType = wrapper.cfbundle;
 			path = SnappyTests.xctest;
 			remoteRef = 1371154E1A1BEBC5008A71B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		139334871A21B28A00AAD300 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 139334861A21B28A00AAD300 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		139334891A21B28A00AAD300 /* AlamofireTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlamofireTests.xctest;
+			remoteRef = 139334881A21B28A00AAD300 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		139334971A21B73A00AAD300 /* Haneke.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Haneke.framework;
+			remoteRef = 139334961A21B73A00AAD300 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		139334991A21B73A00AAD300 /* HanekeTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = HanekeTests.xctest;
+			remoteRef = 139334981A21B73A00AAD300 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1393349B1A21B73A00AAD300 /* HanekeDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HanekeDemo.app;
+			remoteRef = 1393349A1A21B73A00AAD300 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -476,7 +605,6 @@
 				13EE02A41A1D103E001470A3 /* learning.storyboard in Resources */,
 				1330B71A1A2105F600188FCF /* FullSample.storyboard in Resources */,
 				13EE02B41A1D17E1001470A3 /* schedule.storyboard in Resources */,
-				13F1E5631A144BF700EB08AA /* xhome.storyboard in Resources */,
 				13F1E5581A13F9A400EB08AA /* MuseoSans-300.otf in Resources */,
 				13369DB71A0D72F7000F9032 /* Images.xcassets in Resources */,
 				13A2F5F31A16A15D0057182D /* maps.storyboard in Resources */,
@@ -541,6 +669,16 @@
 			isa = PBXTargetDependency;
 			name = Snappy;
 			targetProxy = 1371155C1A1BED2C008A71B9 /* PBXContainerItemProxy */;
+		};
+		1393348C1A21B30300AAD300 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			targetProxy = 1393348B1A21B30300AAD300 /* PBXContainerItemProxy */;
+		};
+		1393349E1A21B75D00AAD300 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Haneke;
+			targetProxy = 1393349D1A21B75D00AAD300 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
