@@ -17,7 +17,6 @@
 		13369DB71A0D72F7000F9032 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13369DB61A0D72F7000F9032 /* Images.xcassets */; };
 		13369DBA1A0D72F7000F9032 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13369DB81A0D72F7000F9032 /* LaunchScreen.xib */; };
 		13369DC61A0D72F7000F9032 /* masterappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13369DC51A0D72F7000F9032 /* masterappTests.swift */; };
-		13687C0C1A238FFB00E30F99 /* Snappy.framework in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = 13687C031A238FE700E30F99 /* Snappy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		13687C0D1A238FFB00E30F99 /* Haneke.framework in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = 13687BF81A238FE100E30F99 /* Haneke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		13687C0E1A238FFB00E30F99 /* Alamofire.framework in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = 13687BED1A238FDB00E30F99 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		137115601A1C1A78008A71B9 /* UIViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1371155F1A1C1A78008A71B9 /* UIViewUtils.swift */; };
@@ -101,27 +100,6 @@
 			remoteGlobalIDString = A0026E9A19C9BFBC004DE0C6;
 			remoteInfo = HanekeDemo;
 		};
-		13687C021A238FE700E30F99 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13687BFD1A238FE700E30F99 /* Snappy.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
-			remoteInfo = Snappy;
-		};
-		13687C041A238FE700E30F99 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13687BFD1A238FE700E30F99 /* Snappy.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
-			remoteInfo = SnappyTests;
-		};
-		13687C061A238FF400E30F99 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13687BFD1A238FE700E30F99 /* Snappy.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
-			remoteInfo = Snappy;
-		};
 		13687C081A238FF400E30F99 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 13687BF01A238FE100E30F99 /* Haneke.xcodeproj */;
@@ -135,6 +113,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
 			remoteInfo = Alamofire;
+		};
+		13687D121A2394B700E30F99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13687D0D1A2394B700E30F99 /* Snappy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
+			remoteInfo = Snappy;
+		};
+		13687D141A2394B700E30F99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13687D0D1A2394B700E30F99 /* Snappy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
+			remoteInfo = SnappyTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -155,7 +147,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				13687C0C1A238FFB00E30F99 /* Snappy.framework in Copy Files (1 item) */,
 				13687C0D1A238FFB00E30F99 /* Haneke.framework in Copy Files (1 item) */,
 				13687C0E1A238FFB00E30F99 /* Alamofire.framework in Copy Files (1 item) */,
 			);
@@ -181,7 +172,7 @@
 		13369DC51A0D72F7000F9032 /* masterappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = masterappTests.swift; sourceTree = "<group>"; };
 		13687BE71A238FDB00E30F99 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
 		13687BF01A238FE100E30F99 /* Haneke.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Haneke.xcodeproj; path = Haneke/Haneke.xcodeproj; sourceTree = SOURCE_ROOT; };
-		13687BFD1A238FE700E30F99 /* Snappy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Snappy.xcodeproj; path = "Snappy-master/Snappy.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		13687D0D1A2394B700E30F99 /* Snappy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Snappy.xcodeproj; path = "Snappy-master/Snappy.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		1371155F1A1C1A78008A71B9 /* UIViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewUtils.swift; sourceTree = "<group>"; };
 		137115611A1C4C07008A71B9 /* Utility.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Utility.storyboard; sourceTree = "<group>"; };
 		139072551A21371F00076152 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
@@ -354,11 +345,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		13687BFE1A238FE700E30F99 /* Products */ = {
+		13687D0E1A2394B700E30F99 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13687C031A238FE700E30F99 /* Snappy.framework */,
-				13687C051A238FE700E30F99 /* SnappyTests.xctest */,
+				13687D131A2394B700E30F99 /* Snappy.framework */,
+				13687D151A2394B700E30F99 /* SnappyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -366,7 +357,7 @@
 		137115461A1BEBAF008A71B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				13687BFD1A238FE700E30F99 /* Snappy.xcodeproj */,
+				13687D0D1A2394B700E30F99 /* Snappy.xcodeproj */,
 				13687BF01A238FE100E30F99 /* Haneke.xcodeproj */,
 				13687BE71A238FDB00E30F99 /* Alamofire.xcodeproj */,
 			);
@@ -446,7 +437,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				13687C071A238FF400E30F99 /* PBXTargetDependency */,
 				13687C091A238FF400E30F99 /* PBXTargetDependency */,
 				13687C0B1A238FF400E30F99 /* PBXTargetDependency */,
 			);
@@ -513,8 +503,8 @@
 					ProjectRef = 13687BF01A238FE100E30F99 /* Haneke.xcodeproj */;
 				},
 				{
-					ProductGroup = 13687BFE1A238FE700E30F99 /* Products */;
-					ProjectRef = 13687BFD1A238FE700E30F99 /* Snappy.xcodeproj */;
+					ProductGroup = 13687D0E1A2394B700E30F99 /* Products */;
+					ProjectRef = 13687D0D1A2394B700E30F99 /* Snappy.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -561,18 +551,18 @@
 			remoteRef = 13687BFB1A238FE100E30F99 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		13687C031A238FE700E30F99 /* Snappy.framework */ = {
+		13687D131A2394B700E30F99 /* Snappy.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Snappy.framework;
-			remoteRef = 13687C021A238FE700E30F99 /* PBXContainerItemProxy */;
+			remoteRef = 13687D121A2394B700E30F99 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		13687C051A238FE700E30F99 /* SnappyTests.xctest */ = {
+		13687D151A2394B700E30F99 /* SnappyTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = SnappyTests.xctest;
-			remoteRef = 13687C041A238FE700E30F99 /* PBXContainerItemProxy */;
+			remoteRef = 13687D141A2394B700E30F99 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -662,11 +652,6 @@
 			isa = PBXTargetDependency;
 			target = 13369DA61A0D72F7000F9032 /* masterapp */;
 			targetProxy = 13369DC01A0D72F7000F9032 /* PBXContainerItemProxy */;
-		};
-		13687C071A238FF400E30F99 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Snappy;
-			targetProxy = 13687C061A238FF400E30F99 /* PBXContainerItemProxy */;
 		};
 		13687C091A238FF400E30F99 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
