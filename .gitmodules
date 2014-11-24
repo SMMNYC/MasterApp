@@ -1,0 +1,9 @@
+[submodule "Snappy"]
+	path = Snappy
+	url = https://github.com/Masonry/Snappy.git
+[submodule "HanekeSwift"]
+	path = HanekeSwift
+	url = https://github.com/Haneke/HanekeSwift.git
+[submodule "Alamofire"]
+	path = Alamofire
+	url = https://github.com/Alamofire/Alamofire.git
