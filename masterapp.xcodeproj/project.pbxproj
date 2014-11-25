@@ -17,8 +17,6 @@
 		13369DB71A0D72F7000F9032 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13369DB61A0D72F7000F9032 /* Images.xcassets */; };
 		13369DBA1A0D72F7000F9032 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13369DB81A0D72F7000F9032 /* LaunchScreen.xib */; };
 		13369DC61A0D72F7000F9032 /* masterappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13369DC51A0D72F7000F9032 /* masterappTests.swift */; };
-		1371155A1A1BED2C008A71B9 /* Snappy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1371154D1A1BEBC5008A71B9 /* Snappy.framework */; };
-		1371155B1A1BED2C008A71B9 /* Snappy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1371154D1A1BEBC5008A71B9 /* Snappy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		137115601A1C1A78008A71B9 /* UIViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1371155F1A1C1A78008A71B9 /* UIViewUtils.swift */; };
 		137115621A1C4C07008A71B9 /* Utility.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 137115611A1C4C07008A71B9 /* Utility.storyboard */; };
 		139072561A21371F00076152 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139072551A21371F00076152 /* TestViewController.swift */; };
@@ -66,23 +64,23 @@
 			remoteGlobalIDString = 13369DA61A0D72F7000F9032;
 			remoteInfo = masterapp;
 		};
-		1371154C1A1BEBC5008A71B9 /* PBXContainerItemProxy */ = {
+		FA4A843E1A249F2A00C9DD2D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 137115471A1BEBC4008A71B9 /* Snappy.xcodeproj */;
+			containerPortal = FA4A84391A249F2A00C9DD2D /* Snappy.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
 			remoteInfo = Snappy;
 		};
-		1371154E1A1BEBC5008A71B9 /* PBXContainerItemProxy */ = {
+		FA4A84401A249F2A00C9DD2D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 137115471A1BEBC4008A71B9 /* Snappy.xcodeproj */;
+			containerPortal = FA4A84391A249F2A00C9DD2D /* Snappy.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
 			remoteInfo = SnappyTests;
 		};
-		1371155C1A1BED2C008A71B9 /* PBXContainerItemProxy */ = {
+		FA4A84421A249F7900C9DD2D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 137115471A1BEBC4008A71B9 /* Snappy.xcodeproj */;
+			containerPortal = FA4A84391A249F2A00C9DD2D /* Snappy.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
 			remoteInfo = Snappy;
@@ -96,7 +94,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1371155B1A1BED2C008A71B9 /* Snappy.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,7 +115,6 @@
 		13369DBF1A0D72F7000F9032 /* masterappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = masterappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13369DC41A0D72F7000F9032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13369DC51A0D72F7000F9032 /* masterappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = masterappTests.swift; sourceTree = "<group>"; };
-		137115471A1BEBC4008A71B9 /* Snappy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Snappy.xcodeproj; path = "../../../../../../../../Projects/MasterApp/Snappy-master/Snappy.xcodeproj"; sourceTree = "<group>"; };
 		1371155F1A1C1A78008A71B9 /* UIViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewUtils.swift; sourceTree = "<group>"; };
 		137115611A1C4C07008A71B9 /* Utility.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Utility.storyboard; sourceTree = "<group>"; };
 		139072551A21371F00076152 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +152,7 @@
 		13F1E5531A13F9A400EB08AA /* MuseoSans-300.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-300.otf"; sourceTree = "<group>"; };
 		13F1E5601A143BE300EB08AA /* SegueUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueUtils.swift; sourceTree = "<group>"; };
 		13F1E5621A144BF700EB08AA /* xhome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = xhome.storyboard; sourceTree = "<group>"; };
+		FA4A84391A249F2A00C9DD2D /* Snappy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Snappy.xcodeproj; path = "Snappy-master/Snappy.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +160,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1371155A1A1BED2C008A71B9 /* Snappy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,19 +275,10 @@
 		137115461A1BEBAF008A71B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				137115471A1BEBC4008A71B9 /* Snappy.xcodeproj */,
+				FA4A84391A249F2A00C9DD2D /* Snappy.xcodeproj */,
 			);
 			name = Frameworks;
-			path = masterapp;
-			sourceTree = "<group>";
-		};
-		137115481A1BEBC4008A71B9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1371154D1A1BEBC5008A71B9 /* Snappy.framework */,
-				1371154F1A1BEBC5008A71B9 /* SnappyTests.xctest */,
-			);
-			name = Products;
+			path = frameworks;
 			sourceTree = "<group>";
 		};
 		13A1D5E31A12B8A500D110FB /* Utils */ = {
@@ -349,6 +336,15 @@
 			name = Fonts;
 			sourceTree = "<group>";
 		};
+		FA4A843A1A249F2A00C9DD2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA4A843F1A249F2A00C9DD2D /* Snappy.framework */,
+				FA4A84411A249F2A00C9DD2D /* SnappyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -364,7 +360,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				1371155D1A1BED2C008A71B9 /* PBXTargetDependency */,
+				FA4A84431A249F7900C9DD2D /* PBXTargetDependency */,
 			);
 			name = masterapp;
 			productName = masterapp;
@@ -421,8 +417,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 137115481A1BEBC4008A71B9 /* Products */;
-					ProjectRef = 137115471A1BEBC4008A71B9 /* Snappy.xcodeproj */;
+					ProductGroup = FA4A843A1A249F2A00C9DD2D /* Products */;
+					ProjectRef = FA4A84391A249F2A00C9DD2D /* Snappy.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -434,18 +430,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		1371154D1A1BEBC5008A71B9 /* Snappy.framework */ = {
+		FA4A843F1A249F2A00C9DD2D /* Snappy.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Snappy.framework;
-			remoteRef = 1371154C1A1BEBC5008A71B9 /* PBXContainerItemProxy */;
+			remoteRef = FA4A843E1A249F2A00C9DD2D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		1371154F1A1BEBC5008A71B9 /* SnappyTests.xctest */ = {
+		FA4A84411A249F2A00C9DD2D /* SnappyTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = SnappyTests.xctest;
-			remoteRef = 1371154E1A1BEBC5008A71B9 /* PBXContainerItemProxy */;
+			remoteRef = FA4A84401A249F2A00C9DD2D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -537,10 +533,10 @@
 			target = 13369DA61A0D72F7000F9032 /* masterapp */;
 			targetProxy = 13369DC01A0D72F7000F9032 /* PBXContainerItemProxy */;
 		};
-		1371155D1A1BED2C008A71B9 /* PBXTargetDependency */ = {
+		FA4A84431A249F7900C9DD2D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Snappy;
-			targetProxy = 1371155C1A1BED2C008A71B9 /* PBXContainerItemProxy */;
+			targetProxy = FA4A84421A249F7900C9DD2D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
