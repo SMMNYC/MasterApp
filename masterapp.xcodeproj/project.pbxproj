@@ -17,7 +17,6 @@
 		13369DB71A0D72F7000F9032 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13369DB61A0D72F7000F9032 /* Images.xcassets */; };
 		13369DBA1A0D72F7000F9032 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13369DB81A0D72F7000F9032 /* LaunchScreen.xib */; };
 		13369DC61A0D72F7000F9032 /* masterappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13369DC51A0D72F7000F9032 /* masterappTests.swift */; };
-		13687C0D1A238FFB00E30F99 /* Haneke.framework in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = 13687BF81A238FE100E30F99 /* Haneke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		13687C0E1A238FFB00E30F99 /* Alamofire.framework in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = 13687BED1A238FDB00E30F99 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		137115601A1C1A78008A71B9 /* UIViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1371155F1A1C1A78008A71B9 /* UIViewUtils.swift */; };
 		137115621A1C4C07008A71B9 /* Utility.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 137115611A1C4C07008A71B9 /* Utility.storyboard */; };
@@ -36,6 +35,8 @@
 		13A6333B1A211B6900BE90FE /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A6333A1A211B6900BE90FE /* CenterViewController.swift */; };
 		13A6333E1A21218000BE90FE /* CenterScreenSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A6333D1A21218000BE90FE /* CenterScreenSegue.swift */; };
 		13A633401A2126AC00BE90FE /* CenterSample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A6333F1A2126AC00BE90FE /* CenterSample.storyboard */; };
+		13E155981A24F724009D40DE /* Haneke.framework in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = 13E1558B1A24F6FF009D40DE /* Haneke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		13E155991A24F72C009D40DE /* Snappy.framework in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = 13E155801A24F6F8009D40DE /* Snappy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		13E33C1C1A1533B5007B413B /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13E33C1B1A1533B4007B413B /* profile.storyboard */; };
 		13EE02391A1C4FAB001470A3 /* ProfileKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EE02381A1C4FAB001470A3 /* ProfileKViewController.swift */; };
 		13EE023C1A1C694F001470A3 /* HJREmbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EE023B1A1C694F001470A3 /* HJREmbedView.swift */; };
@@ -79,34 +80,6 @@
 			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
 			remoteInfo = AlamofireTests;
 		};
-		13687BF71A238FE100E30F99 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13687BF01A238FE100E30F99 /* Haneke.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A095C9561980418C00CD0F4C;
-			remoteInfo = Haneke;
-		};
-		13687BF91A238FE100E30F99 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13687BF01A238FE100E30F99 /* Haneke.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A095C9611980418C00CD0F4C;
-			remoteInfo = HanekeTests;
-		};
-		13687BFB1A238FE100E30F99 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13687BF01A238FE100E30F99 /* Haneke.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A0026E9A19C9BFBC004DE0C6;
-			remoteInfo = HanekeDemo;
-		};
-		13687C081A238FF400E30F99 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13687BF01A238FE100E30F99 /* Haneke.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A095C9551980418C00CD0F4C;
-			remoteInfo = Haneke;
-		};
 		13687C0A1A238FF400E30F99 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 13687BE71A238FDB00E30F99 /* Alamofire.xcodeproj */;
@@ -114,19 +87,54 @@
 			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
 			remoteInfo = Alamofire;
 		};
-		13687D121A2394B700E30F99 /* PBXContainerItemProxy */ = {
+		13E1557F1A24F6F8009D40DE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 13687D0D1A2394B700E30F99 /* Snappy.xcodeproj */;
+			containerPortal = 13E1557A1A24F6F8009D40DE /* Snappy.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
 			remoteInfo = Snappy;
 		};
-		13687D141A2394B700E30F99 /* PBXContainerItemProxy */ = {
+		13E155811A24F6F8009D40DE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 13687D0D1A2394B700E30F99 /* Snappy.xcodeproj */;
+			containerPortal = 13E1557A1A24F6F8009D40DE /* Snappy.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
 			remoteInfo = SnappyTests;
+		};
+		13E1558A1A24F6FF009D40DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13E155831A24F6FF009D40DE /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A095C9561980418C00CD0F4C;
+			remoteInfo = Haneke;
+		};
+		13E1558C1A24F6FF009D40DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13E155831A24F6FF009D40DE /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A095C9611980418C00CD0F4C;
+			remoteInfo = HanekeTests;
+		};
+		13E1558E1A24F6FF009D40DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13E155831A24F6FF009D40DE /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0026E9A19C9BFBC004DE0C6;
+			remoteInfo = HanekeDemo;
+		};
+		13E155921A24F70D009D40DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13E1557A1A24F6F8009D40DE /* Snappy.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
+			remoteInfo = Snappy;
+		};
+		13E155961A24F713009D40DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13E155831A24F6FF009D40DE /* Haneke.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A095C9551980418C00CD0F4C;
+			remoteInfo = Haneke;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -147,7 +155,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				13687C0D1A238FFB00E30F99 /* Haneke.framework in Copy Files (1 item) */,
+				13E155991A24F72C009D40DE /* Snappy.framework in Copy Files (1 item) */,
+				13E155981A24F724009D40DE /* Haneke.framework in Copy Files (1 item) */,
 				13687C0E1A238FFB00E30F99 /* Alamofire.framework in Copy Files (1 item) */,
 			);
 			name = "Copy Files (1 item)";
@@ -171,8 +180,6 @@
 		13369DC41A0D72F7000F9032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13369DC51A0D72F7000F9032 /* masterappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = masterappTests.swift; sourceTree = "<group>"; };
 		13687BE71A238FDB00E30F99 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
-		13687BF01A238FE100E30F99 /* Haneke.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Haneke.xcodeproj; path = Haneke/Haneke.xcodeproj; sourceTree = SOURCE_ROOT; };
-		13687D0D1A2394B700E30F99 /* Snappy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Snappy.xcodeproj; path = "Snappy-master/Snappy.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		1371155F1A1C1A78008A71B9 /* UIViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewUtils.swift; sourceTree = "<group>"; };
 		137115611A1C4C07008A71B9 /* Utility.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Utility.storyboard; sourceTree = "<group>"; };
 		139072551A21371F00076152 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
@@ -190,6 +197,8 @@
 		13A6333A1A211B6900BE90FE /* CenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CenterViewController.swift; path = ../CenterViewController.swift; sourceTree = "<group>"; };
 		13A6333D1A21218000BE90FE /* CenterScreenSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterScreenSegue.swift; sourceTree = "<group>"; };
 		13A6333F1A2126AC00BE90FE /* CenterSample.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CenterSample.storyboard; sourceTree = "<group>"; };
+		13E1557A1A24F6F8009D40DE /* Snappy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Snappy.xcodeproj; path = Snappy/Snappy.xcodeproj; sourceTree = SOURCE_ROOT; };
+		13E155831A24F6FF009D40DE /* Haneke.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Haneke.xcodeproj; path = HanekeSwift/Haneke.xcodeproj; sourceTree = SOURCE_ROOT; };
 		13E33C1B1A1533B4007B413B /* profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
 		13EE02381A1C4FAB001470A3 /* ProfileKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileKViewController.swift; sourceTree = "<group>"; };
 		13EE023B1A1C694F001470A3 /* HJREmbedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HJREmbedView.swift; path = ../HJREmbedView.swift; sourceTree = "<group>"; };
@@ -335,30 +344,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		13687BF11A238FE100E30F99 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				13687BF81A238FE100E30F99 /* Haneke.framework */,
-				13687BFA1A238FE100E30F99 /* HanekeTests.xctest */,
-				13687BFC1A238FE100E30F99 /* HanekeDemo.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		13687D0E1A2394B700E30F99 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				13687D131A2394B700E30F99 /* Snappy.framework */,
-				13687D151A2394B700E30F99 /* SnappyTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		137115461A1BEBAF008A71B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				13687D0D1A2394B700E30F99 /* Snappy.xcodeproj */,
-				13687BF01A238FE100E30F99 /* Haneke.xcodeproj */,
+				13E155831A24F6FF009D40DE /* Haneke.xcodeproj */,
+				13E1557A1A24F6F8009D40DE /* Snappy.xcodeproj */,
 				13687BE71A238FDB00E30F99 /* Alamofire.xcodeproj */,
 			);
 			name = Frameworks;
@@ -401,6 +391,25 @@
 			name = Segues;
 			sourceTree = "<group>";
 		};
+		13E1557B1A24F6F8009D40DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13E155801A24F6F8009D40DE /* Snappy.framework */,
+				13E155821A24F6F8009D40DE /* SnappyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13E155841A24F6FF009D40DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13E1558B1A24F6FF009D40DE /* Haneke.framework */,
+				13E1558D1A24F6FF009D40DE /* HanekeTests.xctest */,
+				13E1558F1A24F6FF009D40DE /* HanekeDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		13F1E54D1A13F98500EB08AA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -437,8 +446,9 @@
 			buildRules = (
 			);
 			dependencies = (
-				13687C091A238FF400E30F99 /* PBXTargetDependency */,
 				13687C0B1A238FF400E30F99 /* PBXTargetDependency */,
+				13E155931A24F70D009D40DE /* PBXTargetDependency */,
+				13E155971A24F713009D40DE /* PBXTargetDependency */,
 			);
 			name = masterapp;
 			productName = masterapp;
@@ -499,12 +509,12 @@
 					ProjectRef = 13687BE71A238FDB00E30F99 /* Alamofire.xcodeproj */;
 				},
 				{
-					ProductGroup = 13687BF11A238FE100E30F99 /* Products */;
-					ProjectRef = 13687BF01A238FE100E30F99 /* Haneke.xcodeproj */;
+					ProductGroup = 13E155841A24F6FF009D40DE /* Products */;
+					ProjectRef = 13E155831A24F6FF009D40DE /* Haneke.xcodeproj */;
 				},
 				{
-					ProductGroup = 13687D0E1A2394B700E30F99 /* Products */;
-					ProjectRef = 13687D0D1A2394B700E30F99 /* Snappy.xcodeproj */;
+					ProductGroup = 13E1557B1A24F6F8009D40DE /* Products */;
+					ProjectRef = 13E1557A1A24F6F8009D40DE /* Snappy.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -530,39 +540,39 @@
 			remoteRef = 13687BEE1A238FDB00E30F99 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		13687BF81A238FE100E30F99 /* Haneke.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Haneke.framework;
-			remoteRef = 13687BF71A238FE100E30F99 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		13687BFA1A238FE100E30F99 /* HanekeTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = HanekeTests.xctest;
-			remoteRef = 13687BF91A238FE100E30F99 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		13687BFC1A238FE100E30F99 /* HanekeDemo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = HanekeDemo.app;
-			remoteRef = 13687BFB1A238FE100E30F99 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		13687D131A2394B700E30F99 /* Snappy.framework */ = {
+		13E155801A24F6F8009D40DE /* Snappy.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Snappy.framework;
-			remoteRef = 13687D121A2394B700E30F99 /* PBXContainerItemProxy */;
+			remoteRef = 13E1557F1A24F6F8009D40DE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		13687D151A2394B700E30F99 /* SnappyTests.xctest */ = {
+		13E155821A24F6F8009D40DE /* SnappyTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = SnappyTests.xctest;
-			remoteRef = 13687D141A2394B700E30F99 /* PBXContainerItemProxy */;
+			remoteRef = 13E155811A24F6F8009D40DE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		13E1558B1A24F6FF009D40DE /* Haneke.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Haneke.framework;
+			remoteRef = 13E1558A1A24F6FF009D40DE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		13E1558D1A24F6FF009D40DE /* HanekeTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = HanekeTests.xctest;
+			remoteRef = 13E1558C1A24F6FF009D40DE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		13E1558F1A24F6FF009D40DE /* HanekeDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HanekeDemo.app;
+			remoteRef = 13E1558E1A24F6FF009D40DE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -653,15 +663,20 @@
 			target = 13369DA61A0D72F7000F9032 /* masterapp */;
 			targetProxy = 13369DC01A0D72F7000F9032 /* PBXContainerItemProxy */;
 		};
-		13687C091A238FF400E30F99 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Haneke;
-			targetProxy = 13687C081A238FF400E30F99 /* PBXContainerItemProxy */;
-		};
 		13687C0B1A238FF400E30F99 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			targetProxy = 13687C0A1A238FF400E30F99 /* PBXContainerItemProxy */;
+		};
+		13E155931A24F70D009D40DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Snappy;
+			targetProxy = 13E155921A24F70D009D40DE /* PBXContainerItemProxy */;
+		};
+		13E155971A24F713009D40DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Haneke;
+			targetProxy = 13E155961A24F713009D40DE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -702,7 +717,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Scientia MedMedia, LLC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Scientia MedMedia, LLC";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -745,7 +761,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Scientia MedMedia, LLC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Scientia MedMedia, LLC";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -768,6 +785,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = masterapp/Info.plist;
@@ -781,6 +799,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = masterapp/Info.plist;
