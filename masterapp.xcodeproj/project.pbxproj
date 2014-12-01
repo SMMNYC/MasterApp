@@ -59,6 +59,12 @@
 		84A58CC31A2C84AD007AAA29 /* Haneke.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84A58CBD1A2C8498007AAA29 /* Haneke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84A58CCF1A2C85A8007AAA29 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A58CCC1A2C859D007AAA29 /* Alamofire.framework */; };
 		84A58CD01A2C85A8007AAA29 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84A58CCC1A2C859D007AAA29 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84A58CD41A2C879A007AAA29 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A58CD31A2C879A007AAA29 /* CFNetwork.framework */; };
+		84A58CD61A2C879F007AAA29 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A58CD51A2C879F007AAA29 /* CoreData.framework */; };
+		84A58CEA1A2C881A007AAA29 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A58CE91A2C881A007AAA29 /* MobileCoreServices.framework */; };
+		84A58CEC1A2C881F007AAA29 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A58CEB1A2C881F007AAA29 /* Security.framework */; };
+		84A58CEE1A2C8827007AAA29 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A58CED1A2C8827007AAA29 /* SystemConfiguration.framework */; };
+		84A58CFC1A2C8D96007AAA29 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A58CDF1A2C87CA007AAA29 /* libRestKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +145,41 @@
 			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
 			remoteInfo = Alamofire;
 		};
+		84A58CDE1A2C87CA007AAA29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A58CD71A2C87CA007AAA29 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		84A58CE01A2C87CA007AAA29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A58CD71A2C87CA007AAA29 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		84A58CE21A2C87CA007AAA29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A58CD71A2C87CA007AAA29 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		84A58CE41A2C87CA007AAA29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A58CD71A2C87CA007AAA29 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		84A58CFA1A2C8D92007AAA29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A58CD71A2C87CA007AAA29 /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -211,6 +252,12 @@
 		84A58CA81A2C8384007AAA29 /* Snappy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Snappy.xcodeproj; path = Dependencies/Snappy/Snappy.xcodeproj; sourceTree = SOURCE_ROOT; };
 		84A58CB51A2C8498007AAA29 /* Haneke.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Haneke.xcodeproj; path = Dependencies/HanekeSwift/Haneke.xcodeproj; sourceTree = SOURCE_ROOT; };
 		84A58CC61A2C859D007AAA29 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Dependencies/Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
+		84A58CD31A2C879A007AAA29 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		84A58CD51A2C879F007AAA29 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		84A58CD71A2C87CA007AAA29 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = Dependencies/RestKit/RestKit.xcodeproj; sourceTree = SOURCE_ROOT; };
+		84A58CE91A2C881A007AAA29 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		84A58CEB1A2C881F007AAA29 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		84A58CED1A2C8827007AAA29 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +265,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A58CFC1A2C8D96007AAA29 /* libRestKit.a in Frameworks */,
+				84A58CEE1A2C8827007AAA29 /* SystemConfiguration.framework in Frameworks */,
+				84A58CEC1A2C881F007AAA29 /* Security.framework in Frameworks */,
+				84A58CEA1A2C881A007AAA29 /* MobileCoreServices.framework in Frameworks */,
+				84A58CD61A2C879F007AAA29 /* CoreData.framework in Frameworks */,
+				84A58CD41A2C879A007AAA29 /* CFNetwork.framework in Frameworks */,
 				84A58CC21A2C84AD007AAA29 /* Haneke.framework in Frameworks */,
 				84A58CCF1A2C85A8007AAA29 /* Alamofire.framework in Frameworks */,
 				84A58CB11A2C83FB007AAA29 /* Snappy.framework in Frameworks */,
@@ -334,6 +387,12 @@
 		137115461A1BEBAF008A71B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84A58CED1A2C8827007AAA29 /* SystemConfiguration.framework */,
+				84A58CEB1A2C881F007AAA29 /* Security.framework */,
+				84A58CE91A2C881A007AAA29 /* MobileCoreServices.framework */,
+				84A58CD31A2C879A007AAA29 /* CFNetwork.framework */,
+				84A58CD51A2C879F007AAA29 /* CoreData.framework */,
+				84A58CD71A2C87CA007AAA29 /* RestKit.xcodeproj */,
 				84A58CC61A2C859D007AAA29 /* Alamofire.xcodeproj */,
 				84A58CB51A2C8498007AAA29 /* Haneke.xcodeproj */,
 				84A58CA81A2C8384007AAA29 /* Snappy.xcodeproj */,
@@ -426,6 +485,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		84A58CD81A2C87CA007AAA29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84A58CDF1A2C87CA007AAA29 /* libRestKit.a */,
+				84A58CE11A2C87CA007AAA29 /* RestKitTests.xctest */,
+				84A58CE31A2C87CA007AAA29 /* RestKit.framework */,
+				84A58CE51A2C87CA007AAA29 /* RestKitFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -441,6 +511,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				84A58CFB1A2C8D92007AAA29 /* PBXTargetDependency */,
 				84A58CB41A2C83FB007AAA29 /* PBXTargetDependency */,
 				84A58CC51A2C84AD007AAA29 /* PBXTargetDependency */,
 				84A58CD21A2C85A8007AAA29 /* PBXTargetDependency */,
@@ -508,6 +579,10 @@
 					ProjectRef = 84A58CB51A2C8498007AAA29 /* Haneke.xcodeproj */;
 				},
 				{
+					ProductGroup = 84A58CD81A2C87CA007AAA29 /* Products */;
+					ProjectRef = 84A58CD71A2C87CA007AAA29 /* RestKit.xcodeproj */;
+				},
+				{
 					ProductGroup = 84A58CA91A2C8384007AAA29 /* Products */;
 					ProjectRef = 84A58CA81A2C8384007AAA29 /* Snappy.xcodeproj */;
 				},
@@ -568,6 +643,34 @@
 			fileType = wrapper.cfbundle;
 			path = AlamofireTests.xctest;
 			remoteRef = 84A58CCD1A2C859D007AAA29 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84A58CDF1A2C87CA007AAA29 /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = 84A58CDE1A2C87CA007AAA29 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84A58CE11A2C87CA007AAA29 /* RestKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.xctest;
+			remoteRef = 84A58CE01A2C87CA007AAA29 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84A58CE31A2C87CA007AAA29 /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = 84A58CE21A2C87CA007AAA29 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84A58CE51A2C87CA007AAA29 /* RestKitFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.xctest;
+			remoteRef = 84A58CE41A2C87CA007AAA29 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -672,6 +775,11 @@
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			targetProxy = 84A58CD11A2C85A8007AAA29 /* PBXContainerItemProxy */;
+		};
+		84A58CFB1A2C8D92007AAA29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = 84A58CFA1A2C8D92007AAA29 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -780,6 +888,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMPRESS_PNG_FILES = NO;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = masterapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -793,6 +905,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMPRESS_PNG_FILES = NO;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = masterapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

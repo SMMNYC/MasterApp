@@ -7,3 +7,6 @@
 [submodule "Dependencies/Alamofire"]
 	path = Dependencies/Alamofire
 	url = https://github.com/Alamofire/Alamofire.git
+[submodule "Dependencies/RestKit"]
+	path = Dependencies/RestKit
+	url = https://github.com/RestKit/RestKit.git
