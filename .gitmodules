@@ -1,0 +1,9 @@
+[submodule "Dependencies/Snappy"]
+	path = Dependencies/Snappy
+	url = https://github.com/Masonry/Snappy.git
+[submodule "Dependencies/HanekeSwift"]
+	path = Dependencies/HanekeSwift
+	url = https://github.com/Haneke/HanekeSwift.git
+[submodule "Dependencies/Alamofire"]
+	path = Dependencies/Alamofire
+	url = https://github.com/Alamofire/Alamofire.git
