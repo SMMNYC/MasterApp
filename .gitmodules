@@ -1,3 +1,12 @@
-[submodule "Alamofire"]
-	path = Alamofire
-	url = https://ScimMedMEdia@github.com/Alamofire/Alamofire.git
+[submodule "Dependencies/Snappy"]
+	path = Dependencies/Snappy
+	url = https://github.com/Masonry/Snappy.git
+[submodule "Dependencies/HanekeSwift"]
+	path = Dependencies/HanekeSwift
+	url = https://github.com/Haneke/HanekeSwift.git
+[submodule "Dependencies/Alamofire"]
+	path = Dependencies/Alamofire
+	url = https://github.com/Alamofire/Alamofire.git
+[submodule "Dependencies/RestKit"]
+	path = Dependencies/RestKit
+	url = https://github.com/RestKit/RestKit.git

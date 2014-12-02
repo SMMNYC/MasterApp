@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import Haneke
+
 
 class HomeViewController: ContenteViewController {
     @IBOutlet weak var testButton: UIButton!
 
+    @IBOutlet weak var dataField: UITextView!
+    @IBOutlet weak var iamgeHolder: UIImageView!
     @IBAction func testNavToCenter(sender: AnyObject) {
         if (delegate != nil) {
             delegate!.navToCenterView("CenterSample", theScreen: "entry2")
@@ -23,8 +27,23 @@ class HomeViewController: ContenteViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let URL = NSURL(string: "http://www.scimedmedia.com/images/scimedmedia_logo.png")!
+        iamgeHolder.hnk_setImageFromURL(URL)
         // Do any additional setup after loading the view.
+                
+        ServicesManager.sharedManager()?.loadSeminar({ (success, object, responseData, error) -> Void in
+            if (success)
+            {
+                MenuManager.sharedManager().configureWithSeminar(object as Seminar);
+            }
+        })
+        
+        ServicesManager.sharedManager()?.loadSeminar_alamofire({ (success, object, responseData, error) -> Void in
+            if success
+            {
+                MenuManager.sharedManager().configureWithSeminar(object as Seminar)
+            }
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,3 +63,6 @@ class HomeViewController: ContenteViewController {
     */
 
 }
+
+
+//http://www.scimedmedia.com/images/scimedmedia_logo.png

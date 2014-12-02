@@ -13,17 +13,22 @@ protocol MenuViewControllerDelegate{
 }
 */
 
+
 class MenuViewController: UIViewController {
       var delegate:MenuViewControllerDelegate? = nil
     
-let tableData = ["Home","Profile","Schedule", "Book A Room", "People", "Maps", "Guides", "Learning", "Programs", "Catalog", "Forum","Community", "Feed", "Events"]
+    @IBOutlet weak var tableView: UITableView!
+//    let tableData = ["Home","Profile","Schedule", "Book A Room", "People", "Maps", "Guides", "Learning", "Programs", "Catalog", "Forum","Community", "Feed", "Events"]
+    
+    deinit{
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-
         // Do any additional setup after loading the view.
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("updateMenu"), name: kMenuManagerUpdated, object: nil);
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,29 +38,28 @@ let tableData = ["Home","Profile","Schedule", "Book A Room", "People", "Maps", "
     
     func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int
     {
-        return self.tableData.count;
+        return MenuManager.sharedManager().count();
     }
     
     func tableView(tableView: UITableView!,
         cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell!
     {
-       
         
         var cell = tableView.dequeueReusableCellWithIdentifier("MenuCell") as? UITableViewCell
+        var cellName = MenuManager.sharedManager().titleForItem(indexPath.row)
+        cell?.textLabel.text = cellName
+        // cell?.textLabel?.font = UIFont (name: "MuseoSans_500", size: 100)       // var imageName = UIImage(named: tableDatatableDatatableData[indexPath.row])
+        cell?.textLabel.font = UIFont (name: "MuseoSans-300", size: 18)
         
-        cell?.textLabel.text = tableData[indexPath.row]
-         // cell?.textLabel?.font = UIFont (name: "MuseoSans_500", size: 100)       // var imageName = UIImage(named: tableDatatableDatatableData[indexPath.row])
-       cell?.textLabel.font = UIFont (name: "MuseoSans-300", size: 18)
-        var cellName = tableData[indexPath.row]
-        var iconName = getIconName(cellName)
-         var imageName = UIImage(named:iconName)
+        var iconName = MenuManager.sharedManager().iconNameForItem(indexPath.row)
+        var imageName = UIImage(named:iconName)
         cell?.imageView.image = imageName
        
         return cell!
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        var theSelection:String = tableData [indexPath.row]
+        var theSelection:String = MenuManager.sharedManager().titleForItem(indexPath.row)
         println("You selected cell #\(theSelection)!")
         if (delegate != nil) {
             delegate!.handleMenuChoice(self, theChoice: theSelection)
@@ -72,6 +76,10 @@ let tableData = ["Home","Profile","Schedule", "Book A Room", "People", "Maps", "
   
 
 
+    func updateMenu(){
+        tableView.reloadData()
+    }
+    
     /*
     // MARK: - Navigation
 

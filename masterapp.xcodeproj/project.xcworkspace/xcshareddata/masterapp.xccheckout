@@ -5,23 +5,63 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>160EE535-A6E5-41A5-9DE8-606335076CDC</string>
+	<string>B09B579E-D2F3-4B7D-9CDC-17A6D360D70D</string>
 	<key>IDESourceControlProjectName</key>
 	<string>masterapp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>38C2A0D4F62B675E8C16C8BC1437C7753846C8AC</key>
+		<string>https://github.com/AliSoftware/OHHTTPStubs.git</string>
+		<key>3AF18F9C6F5D633BAA0B3F935459E0C777C82047</key>
+		<string>https://github.com/Masonry/Snappy.git</string>
+		<key>47A63E07BF2C4AE0426F985EBA351C687092A209</key>
+		<string>https://github.com/blakewatters/TransitionKit.git</string>
+		<key>67620B5EFA902936DF04070AF595B76AB0333747</key>
+		<string>https://github.com/Alamofire/Alamofire.git</string>
 		<key>73B6B389931596AEB91616267275D4B2984EAAD6</key>
-		<string>https://github.com/SMMNYC/MasterApp.git</string>
+		<string>github.com:SMMNYC/MasterApp.git</string>
+		<key>822670D72DA6CB3E094E900F0D31C5A6027736AD</key>
+		<string>https://github.com/blakewatters/ISO8601DateFormatterValueTransformer.git</string>
+		<key>B4A2CA0E82E9AE44702AB02729DCFB235C2643C9</key>
+		<string>https://github.com/RestKit/RKValueTransformers.git</string>
+		<key>C80A0DCE7BA5516950B5677592E44706A6FDF392</key>
+		<string>https://github.com/NimbusKit/sockit.git</string>
+		<key>C93564C1AFB8B50FF58188F21182F5D0EEAD1C3F</key>
+		<string>https://github.com/Haneke/HanekeSwift.git</string>
+		<key>D78740BB5B159EA13C82AB5AF1D92A0F3C627237</key>
+		<string>https://github.com/RestKit/RestKit.git</string>
+		<key>DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8</key>
+		<string>https://github.com/AFNetworking/AFNetworking.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>masterapp.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>38C2A0D4F62B675E8C16C8BC1437C7753846C8AC</key>
+		<string>../..Dependencies/HanekeSwift/HanekeTests/Submodules</string>
+		<key>3AF18F9C6F5D633BAA0B3F935459E0C777C82047</key>
+		<string>../..Dependencies/Snappy</string>
+		<key>47A63E07BF2C4AE0426F985EBA351C687092A209</key>
+		<string>../..Dependencies/RestKit/Vendor/TransitionKit</string>
+		<key>67620B5EFA902936DF04070AF595B76AB0333747</key>
+		<string>../..Dependencies/Alamofire</string>
 		<key>73B6B389931596AEB91616267275D4B2984EAAD6</key>
 		<string>../..</string>
+		<key>822670D72DA6CB3E094E900F0D31C5A6027736AD</key>
+		<string>../..Dependencies/RestKit/Vendor/ISO8601DateFormatterValueTransformer</string>
+		<key>B4A2CA0E82E9AE44702AB02729DCFB235C2643C9</key>
+		<string>../..Dependencies/RestKit/Vendor/RKValueTransformers</string>
+		<key>C80A0DCE7BA5516950B5677592E44706A6FDF392</key>
+		<string>../..Dependencies/RestKit/Vendor/SOCKit</string>
+		<key>C93564C1AFB8B50FF58188F21182F5D0EEAD1C3F</key>
+		<string>../..Dependencies/HanekeSwift</string>
+		<key>D78740BB5B159EA13C82AB5AF1D92A0F3C627237</key>
+		<string>../..Dependencies/RestKit</string>
+		<key>DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8</key>
+		<string>../..Dependencies/RestKit/Vendor/AFNetworking</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/SMMNYC/MasterApp.git</string>
+	<string>github.com:SMMNYC/MasterApp.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -32,9 +72,89 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AFNetworking</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>67620B5EFA902936DF04070AF595B76AB0333747</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Alamofire</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C93564C1AFB8B50FF58188F21182F5D0EEAD1C3F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HanekeSwift</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>822670D72DA6CB3E094E900F0D31C5A6027736AD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ISO8601DateFormatterValueTransformer</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>73B6B389931596AEB91616267275D4B2984EAAD6</string>
 			<key>IDESourceControlWCCName</key>
 			<string>MasterApp</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D78740BB5B159EA13C82AB5AF1D92A0F3C627237</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RestKit</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B4A2CA0E82E9AE44702AB02729DCFB235C2643C9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RKValueTransformers</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3AF18F9C6F5D633BAA0B3F935459E0C777C82047</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Snappy</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C80A0DCE7BA5516950B5677592E44706A6FDF392</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SOCKit</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>38C2A0D4F62B675E8C16C8BC1437C7753846C8AC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Submodules</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>47A63E07BF2C4AE0426F985EBA351C687092A209</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TransitionKit</string>
 		</dict>
 	</array>
 </dict>

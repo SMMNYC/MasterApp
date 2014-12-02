@@ -42,18 +42,51 @@
                                     <action selector="testNaveToFull:" destination="B26-s1-agG" eventType="touchUpInside" id="ReN-2j-ELL"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jng-W2-Dsh">
+                                <rect key="frame" x="84" y="42" width="174" height="66"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image remotly fetched and cached by Haneke Cache" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXH-XQ-XOT">
+                                <rect key="frame" x="84" y="121" width="408" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Getting Data" translatesAutoresizingMaskIntoConstraints="NO" id="jpR-7h-ajc">
+                                <rect key="frame" x="18" y="376" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Data fetches with get call using Alamofire" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTL-Iu-g7H">
+                                <rect key="frame" x="18" y="356" width="317" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="clr-fd-wxn" firstAttribute="leading" secondItem="vVW-av-q3N" secondAttribute="trailing" constant="27" id="4Zs-X3-FPz"/>
+                            <constraint firstItem="fTL-Iu-g7H" firstAttribute="leading" secondItem="jpR-7h-ajc" secondAttribute="leading" constant="1" id="Dba-uz-Uzy"/>
                             <constraint firstItem="clr-fd-wxn" firstAttribute="centerY" secondItem="vVW-av-q3N" secondAttribute="centerY" id="Jck-uV-UQ6"/>
                             <constraint firstAttribute="centerX" secondItem="vVW-av-q3N" secondAttribute="centerX" id="SZK-vQ-lz7"/>
+                            <constraint firstItem="jpR-7h-ajc" firstAttribute="leading" secondItem="2tZ-Vx-A8E" secondAttribute="leading" constant="18" id="TPU-Kt-JSn"/>
+                            <constraint firstItem="jng-W2-Dsh" firstAttribute="leading" secondItem="2tZ-Vx-A8E" secondAttribute="leading" constant="84" id="bWH-Rj-oII"/>
                             <constraint firstAttribute="trailing" secondItem="0Np-Zl-3Kf" secondAttribute="trailing" constant="34" id="c3F-Vm-8zj"/>
+                            <constraint firstItem="jpR-7h-ajc" firstAttribute="top" secondItem="fTL-Iu-g7H" secondAttribute="bottom" constant="-1" id="cWK-qk-atg"/>
+                            <constraint firstItem="jng-W2-Dsh" firstAttribute="top" secondItem="ptB-ds-xoL" secondAttribute="bottom" constant="22" id="eWz-dH-OHh"/>
                             <constraint firstItem="0Np-Zl-3Kf" firstAttribute="top" secondItem="ptB-ds-xoL" secondAttribute="bottom" constant="192" id="hh4-dp-yai"/>
+                            <constraint firstItem="gXH-XQ-XOT" firstAttribute="leading" secondItem="jng-W2-Dsh" secondAttribute="leading" id="hx1-fp-9Nl"/>
                             <constraint firstAttribute="centerY" secondItem="vVW-av-q3N" secondAttribute="centerY" id="kVL-BV-BzF"/>
+                            <constraint firstItem="jng-W2-Dsh" firstAttribute="top" secondItem="gXH-XQ-XOT" secondAttribute="bottom" constant="-100" id="kgt-rq-XYo"/>
+                            <constraint firstItem="4Eb-jq-EFh" firstAttribute="top" secondItem="jpR-7h-ajc" secondAttribute="bottom" constant="96" id="zZ1-4j-d7g"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="dataField" destination="jpR-7h-ajc" id="nHV-0R-YsT"/>
+                        <outlet property="iamgeHolder" destination="jng-W2-Dsh" id="ygG-w5-DQe"/>
                         <outlet property="testButton" destination="vVW-av-q3N" id="Imz-aW-YKv"/>
                     </connections>
                 </viewController>

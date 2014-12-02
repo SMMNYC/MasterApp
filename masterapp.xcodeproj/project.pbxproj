@@ -53,7 +53,23 @@
 		13F1E5571A13F9A400EB08AA /* MuseoSans-100.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E5521A13F9A400EB08AA /* MuseoSans-100.otf */; };
 		13F1E5581A13F9A400EB08AA /* MuseoSans-300.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E5531A13F9A400EB08AA /* MuseoSans-300.otf */; };
 		13F1E5611A143BE300EB08AA /* SegueUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F1E5601A143BE300EB08AA /* SegueUtils.swift */; };
-		13F1E5631A144BF700EB08AA /* xhome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F1E5621A144BF700EB08AA /* xhome.storyboard */; };
+		848C8BB31A2DD74500D78BD9 /* MenuManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C8BB21A2DD74500D78BD9 /* MenuManager.m */; };
+		84A58CB11A2C83FB007AAA29 /* Snappy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A58CAE1A2C8384007AAA29 /* Snappy.framework */; };
+		84A58CB21A2C83FB007AAA29 /* Snappy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84A58CAE1A2C8384007AAA29 /* Snappy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84A58CC21A2C84AD007AAA29 /* Haneke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A58CBD1A2C8498007AAA29 /* Haneke.framework */; };
+		84A58CC31A2C84AD007AAA29 /* Haneke.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84A58CBD1A2C8498007AAA29 /* Haneke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84A58CCF1A2C85A8007AAA29 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A58CCC1A2C859D007AAA29 /* Alamofire.framework */; };
+		84A58CD01A2C85A8007AAA29 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84A58CCC1A2C859D007AAA29 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84A58CD41A2C879A007AAA29 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A58CD31A2C879A007AAA29 /* CFNetwork.framework */; };
+		84A58CD61A2C879F007AAA29 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A58CD51A2C879F007AAA29 /* CoreData.framework */; };
+		84A58CEA1A2C881A007AAA29 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A58CE91A2C881A007AAA29 /* MobileCoreServices.framework */; };
+		84A58CEC1A2C881F007AAA29 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A58CEB1A2C881F007AAA29 /* Security.framework */; };
+		84A58CEE1A2C8827007AAA29 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A58CED1A2C8827007AAA29 /* SystemConfiguration.framework */; };
+		84A58CFC1A2C8D96007AAA29 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A58CDF1A2C87CA007AAA29 /* libRestKit.a */; };
+		84A58D021A2CA94D007AAA29 /* ServicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A58D011A2CA94D007AAA29 /* ServicesManager.swift */; };
+		84A58D061A2CD260007AAA29 /* Seminar.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A58D051A2CD260007AAA29 /* Seminar.m */; };
+		84A58D091A2CD321007AAA29 /* SeminarWheelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A58D081A2CD321007AAA29 /* SeminarWheelItem.m */; };
+		84A58D151A2CD57F007AAA29 /* ServiceResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A58D141A2CD57F007AAA29 /* ServiceResponse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,26 +80,110 @@
 			remoteGlobalIDString = 13369DA61A0D72F7000F9032;
 			remoteInfo = masterapp;
 		};
-		FA4A843E1A249F2A00C9DD2D /* PBXContainerItemProxy */ = {
+		84A58CAD1A2C8384007AAA29 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FA4A84391A249F2A00C9DD2D /* Snappy.xcodeproj */;
+			containerPortal = 84A58CA81A2C8384007AAA29 /* Snappy.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
 			remoteInfo = Snappy;
 		};
-		FA4A84401A249F2A00C9DD2D /* PBXContainerItemProxy */ = {
+		84A58CAF1A2C8384007AAA29 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FA4A84391A249F2A00C9DD2D /* Snappy.xcodeproj */;
+			containerPortal = 84A58CA81A2C8384007AAA29 /* Snappy.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
 			remoteInfo = SnappyTests;
 		};
-		FA4A84421A249F7900C9DD2D /* PBXContainerItemProxy */ = {
+		84A58CB31A2C83FB007AAA29 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FA4A84391A249F2A00C9DD2D /* Snappy.xcodeproj */;
+			containerPortal = 84A58CA81A2C8384007AAA29 /* Snappy.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
 			remoteInfo = Snappy;
+		};
+		84A58CBC1A2C8498007AAA29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A58CB51A2C8498007AAA29 /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A095C9561980418C00CD0F4C;
+			remoteInfo = Haneke;
+		};
+		84A58CBE1A2C8498007AAA29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A58CB51A2C8498007AAA29 /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A095C9611980418C00CD0F4C;
+			remoteInfo = HanekeTests;
+		};
+		84A58CC01A2C8498007AAA29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A58CB51A2C8498007AAA29 /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0026E9A19C9BFBC004DE0C6;
+			remoteInfo = HanekeDemo;
+		};
+		84A58CC41A2C84AD007AAA29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A58CB51A2C8498007AAA29 /* Haneke.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A095C9551980418C00CD0F4C;
+			remoteInfo = Haneke;
+		};
+		84A58CCB1A2C859D007AAA29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A58CC61A2C859D007AAA29 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		84A58CCD1A2C859D007AAA29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A58CC61A2C859D007AAA29 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = AlamofireTests;
+		};
+		84A58CD11A2C85A8007AAA29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A58CC61A2C859D007AAA29 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		84A58CDE1A2C87CA007AAA29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A58CD71A2C87CA007AAA29 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		84A58CE01A2C87CA007AAA29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A58CD71A2C87CA007AAA29 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		84A58CE21A2C87CA007AAA29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A58CD71A2C87CA007AAA29 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		84A58CE41A2C87CA007AAA29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A58CD71A2C87CA007AAA29 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		84A58CFA1A2C8D92007AAA29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A58CD71A2C87CA007AAA29 /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -94,6 +194,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				84A58CC31A2C84AD007AAA29 /* Haneke.framework in Embed Frameworks */,
+				84A58CD01A2C85A8007AAA29 /* Alamofire.framework in Embed Frameworks */,
+				84A58CB21A2C83FB007AAA29 /* Snappy.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,7 +237,7 @@
 		13A6333F1A2126AC00BE90FE /* CenterSample.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CenterSample.storyboard; sourceTree = "<group>"; };
 		13E33C1B1A1533B4007B413B /* profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
 		13EE02381A1C4FAB001470A3 /* ProfileKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileKViewController.swift; sourceTree = "<group>"; };
-		13EE023B1A1C694F001470A3 /* HJREmbedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJREmbedView.swift; sourceTree = "<group>"; };
+		13EE023B1A1C694F001470A3 /* HJREmbedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HJREmbedView.swift; path = ../HJREmbedView.swift; sourceTree = "<group>"; };
 		13EE029F1A1D101C001470A3 /* bookaroom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = bookaroom.storyboard; sourceTree = "<group>"; };
 		13EE02A11A1D1035001470A3 /* guides.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = guides.storyboard; sourceTree = "<group>"; };
 		13EE02A31A1D103E001470A3 /* learning.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = learning.storyboard; sourceTree = "<group>"; };
@@ -151,8 +254,25 @@
 		13F1E5521A13F9A400EB08AA /* MuseoSans-100.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-100.otf"; sourceTree = "<group>"; };
 		13F1E5531A13F9A400EB08AA /* MuseoSans-300.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-300.otf"; sourceTree = "<group>"; };
 		13F1E5601A143BE300EB08AA /* SegueUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueUtils.swift; sourceTree = "<group>"; };
-		13F1E5621A144BF700EB08AA /* xhome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = xhome.storyboard; sourceTree = "<group>"; };
-		FA4A84391A249F2A00C9DD2D /* Snappy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Snappy.xcodeproj; path = "Snappy-master/Snappy.xcodeproj"; sourceTree = "<group>"; };
+		848C8BB11A2DD74500D78BD9 /* MenuManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuManager.h; sourceTree = "<group>"; };
+		848C8BB21A2DD74500D78BD9 /* MenuManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuManager.m; sourceTree = "<group>"; };
+		84A58CA81A2C8384007AAA29 /* Snappy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Snappy.xcodeproj; path = Dependencies/Snappy/Snappy.xcodeproj; sourceTree = SOURCE_ROOT; };
+		84A58CB51A2C8498007AAA29 /* Haneke.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Haneke.xcodeproj; path = Dependencies/HanekeSwift/Haneke.xcodeproj; sourceTree = SOURCE_ROOT; };
+		84A58CC61A2C859D007AAA29 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Dependencies/Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
+		84A58CD31A2C879A007AAA29 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		84A58CD51A2C879F007AAA29 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		84A58CD71A2C87CA007AAA29 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = Dependencies/RestKit/RestKit.xcodeproj; sourceTree = SOURCE_ROOT; };
+		84A58CE91A2C881A007AAA29 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		84A58CEB1A2C881F007AAA29 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		84A58CED1A2C8827007AAA29 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		84A58CFF1A2CA386007AAA29 /* masterapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "masterapp-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		84A58D011A2CA94D007AAA29 /* ServicesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesManager.swift; sourceTree = "<group>"; };
+		84A58D041A2CD260007AAA29 /* Seminar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Seminar.h; sourceTree = "<group>"; };
+		84A58D051A2CD260007AAA29 /* Seminar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Seminar.m; sourceTree = "<group>"; };
+		84A58D071A2CD321007AAA29 /* SeminarWheelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeminarWheelItem.h; sourceTree = "<group>"; };
+		84A58D081A2CD321007AAA29 /* SeminarWheelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeminarWheelItem.m; sourceTree = "<group>"; };
+		84A58D131A2CD57F007AAA29 /* ServiceResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceResponse.h; sourceTree = "<group>"; };
+		84A58D141A2CD57F007AAA29 /* ServiceResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceResponse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +280,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A58CFC1A2C8D96007AAA29 /* libRestKit.a in Frameworks */,
+				84A58CEE1A2C8827007AAA29 /* SystemConfiguration.framework in Frameworks */,
+				84A58CEC1A2C881F007AAA29 /* Security.framework in Frameworks */,
+				84A58CEA1A2C881A007AAA29 /* MobileCoreServices.framework in Frameworks */,
+				84A58CD61A2C879F007AAA29 /* CoreData.framework in Frameworks */,
+				84A58CD41A2C879A007AAA29 /* CFNetwork.framework in Frameworks */,
+				84A58CC21A2C84AD007AAA29 /* Haneke.framework in Frameworks */,
+				84A58CCF1A2C85A8007AAA29 /* Alamofire.framework in Frameworks */,
+				84A58CB11A2C83FB007AAA29 /* Snappy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +306,6 @@
 			isa = PBXGroup;
 			children = (
 				139072661A21552300076152 /* home.storyboard */,
-				13F1E5621A144BF700EB08AA /* xhome.storyboard */,
 				13EE029F1A1D101C001470A3 /* bookaroom.storyboard */,
 				13EE02A71A1D104D001470A3 /* catalog.storyboard */,
 				13EE02AB1A1D105D001470A3 /* community.storyboard */,
@@ -211,7 +339,6 @@
 		13369D9E1A0D72F7000F9032 = {
 			isa = PBXGroup;
 			children = (
-				13EE023B1A1C694F001470A3 /* HJREmbedView.swift */,
 				137115461A1BEBAF008A71B9 /* Frameworks */,
 				13369DA91A0D72F7000F9032 /* masterapp */,
 				13369DC21A0D72F7000F9032 /* masterappTests */,
@@ -231,6 +358,8 @@
 		13369DA91A0D72F7000F9032 /* masterapp */ = {
 			isa = PBXGroup;
 			children = (
+				84A58D031A2CD249007AAA29 /* ObjectivecSources */,
+				84A58D001A2CA7F0007AAA29 /* Services */,
 				13A6333C1A21213A00BE90FE /* Segues */,
 				13369DAC1A0D72F7000F9032 /* AppDelegate.swift */,
 				13369DB11A0D72F7000F9032 /* ViewController.swift */,
@@ -250,6 +379,7 @@
 		13369DAA1A0D72F7000F9032 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				84A58CFF1A2CA386007AAA29 /* masterapp-Bridging-Header.h */,
 				13369DAB1A0D72F7000F9032 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -275,10 +405,18 @@
 		137115461A1BEBAF008A71B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FA4A84391A249F2A00C9DD2D /* Snappy.xcodeproj */,
+				84A58CED1A2C8827007AAA29 /* SystemConfiguration.framework */,
+				84A58CEB1A2C881F007AAA29 /* Security.framework */,
+				84A58CE91A2C881A007AAA29 /* MobileCoreServices.framework */,
+				84A58CD31A2C879A007AAA29 /* CFNetwork.framework */,
+				84A58CD51A2C879F007AAA29 /* CoreData.framework */,
+				84A58CD71A2C87CA007AAA29 /* RestKit.xcodeproj */,
+				84A58CC61A2C859D007AAA29 /* Alamofire.xcodeproj */,
+				84A58CB51A2C8498007AAA29 /* Haneke.xcodeproj */,
+				84A58CA81A2C8384007AAA29 /* Snappy.xcodeproj */,
 			);
 			name = Frameworks;
-			path = frameworks;
+			path = Dependencies;
 			sourceTree = "<group>";
 		};
 		13A1D5E31A12B8A500D110FB /* Utils */ = {
@@ -309,6 +447,7 @@
 		13A6333C1A21213A00BE90FE /* Segues */ = {
 			isa = PBXGroup;
 			children = (
+				13EE023B1A1C694F001470A3 /* HJREmbedView.swift */,
 				139B16091A12F4BB0014AF49 /* MasterSegue.swift */,
 				13A633371A210D0500BE90FE /* FullScreenSegue.swift */,
 				13A6333D1A21218000BE90FE /* CenterScreenSegue.swift */,
@@ -336,13 +475,66 @@
 			name = Fonts;
 			sourceTree = "<group>";
 		};
-		FA4A843A1A249F2A00C9DD2D /* Products */ = {
+		84A58CA91A2C8384007AAA29 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA4A843F1A249F2A00C9DD2D /* Snappy.framework */,
-				FA4A84411A249F2A00C9DD2D /* SnappyTests.xctest */,
+				84A58CAE1A2C8384007AAA29 /* Snappy.framework */,
+				84A58CB01A2C8384007AAA29 /* SnappyTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		84A58CB61A2C8498007AAA29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84A58CBD1A2C8498007AAA29 /* Haneke.framework */,
+				84A58CBF1A2C8498007AAA29 /* HanekeTests.xctest */,
+				84A58CC11A2C8498007AAA29 /* HanekeDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84A58CC71A2C859D007AAA29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84A58CCC1A2C859D007AAA29 /* Alamofire.framework */,
+				84A58CCE1A2C859D007AAA29 /* AlamofireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84A58CD81A2C87CA007AAA29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84A58CDF1A2C87CA007AAA29 /* libRestKit.a */,
+				84A58CE11A2C87CA007AAA29 /* RestKitTests.xctest */,
+				84A58CE31A2C87CA007AAA29 /* RestKit.framework */,
+				84A58CE51A2C87CA007AAA29 /* RestKitFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84A58D001A2CA7F0007AAA29 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84A58D011A2CA94D007AAA29 /* ServicesManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		84A58D031A2CD249007AAA29 /* ObjectivecSources */ = {
+			isa = PBXGroup;
+			children = (
+				84A58D041A2CD260007AAA29 /* Seminar.h */,
+				84A58D051A2CD260007AAA29 /* Seminar.m */,
+				84A58D071A2CD321007AAA29 /* SeminarWheelItem.h */,
+				84A58D081A2CD321007AAA29 /* SeminarWheelItem.m */,
+				84A58D131A2CD57F007AAA29 /* ServiceResponse.h */,
+				84A58D141A2CD57F007AAA29 /* ServiceResponse.m */,
+				848C8BB11A2DD74500D78BD9 /* MenuManager.h */,
+				848C8BB21A2DD74500D78BD9 /* MenuManager.m */,
+			);
+			path = ObjectivecSources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,7 +552,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				FA4A84431A249F7900C9DD2D /* PBXTargetDependency */,
+				84A58CFB1A2C8D92007AAA29 /* PBXTargetDependency */,
+				84A58CB41A2C83FB007AAA29 /* PBXTargetDependency */,
+				84A58CC51A2C84AD007AAA29 /* PBXTargetDependency */,
+				84A58CD21A2C85A8007AAA29 /* PBXTargetDependency */,
 			);
 			name = masterapp;
 			productName = masterapp;
@@ -417,8 +612,20 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = FA4A843A1A249F2A00C9DD2D /* Products */;
-					ProjectRef = FA4A84391A249F2A00C9DD2D /* Snappy.xcodeproj */;
+					ProductGroup = 84A58CC71A2C859D007AAA29 /* Products */;
+					ProjectRef = 84A58CC61A2C859D007AAA29 /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = 84A58CB61A2C8498007AAA29 /* Products */;
+					ProjectRef = 84A58CB51A2C8498007AAA29 /* Haneke.xcodeproj */;
+				},
+				{
+					ProductGroup = 84A58CD81A2C87CA007AAA29 /* Products */;
+					ProjectRef = 84A58CD71A2C87CA007AAA29 /* RestKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 84A58CA91A2C8384007AAA29 /* Products */;
+					ProjectRef = 84A58CA81A2C8384007AAA29 /* Snappy.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -430,18 +637,81 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		FA4A843F1A249F2A00C9DD2D /* Snappy.framework */ = {
+		84A58CAE1A2C8384007AAA29 /* Snappy.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Snappy.framework;
-			remoteRef = FA4A843E1A249F2A00C9DD2D /* PBXContainerItemProxy */;
+			remoteRef = 84A58CAD1A2C8384007AAA29 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FA4A84411A249F2A00C9DD2D /* SnappyTests.xctest */ = {
+		84A58CB01A2C8384007AAA29 /* SnappyTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = SnappyTests.xctest;
-			remoteRef = FA4A84401A249F2A00C9DD2D /* PBXContainerItemProxy */;
+			remoteRef = 84A58CAF1A2C8384007AAA29 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84A58CBD1A2C8498007AAA29 /* Haneke.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Haneke.framework;
+			remoteRef = 84A58CBC1A2C8498007AAA29 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84A58CBF1A2C8498007AAA29 /* HanekeTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = HanekeTests.xctest;
+			remoteRef = 84A58CBE1A2C8498007AAA29 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84A58CC11A2C8498007AAA29 /* HanekeDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HanekeDemo.app;
+			remoteRef = 84A58CC01A2C8498007AAA29 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84A58CCC1A2C859D007AAA29 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 84A58CCB1A2C859D007AAA29 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84A58CCE1A2C859D007AAA29 /* AlamofireTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlamofireTests.xctest;
+			remoteRef = 84A58CCD1A2C859D007AAA29 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84A58CDF1A2C87CA007AAA29 /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = 84A58CDE1A2C87CA007AAA29 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84A58CE11A2C87CA007AAA29 /* RestKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.xctest;
+			remoteRef = 84A58CE01A2C87CA007AAA29 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84A58CE31A2C87CA007AAA29 /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = 84A58CE21A2C87CA007AAA29 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84A58CE51A2C87CA007AAA29 /* RestKitFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.xctest;
+			remoteRef = 84A58CE41A2C87CA007AAA29 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -472,7 +742,6 @@
 				13EE02A41A1D103E001470A3 /* learning.storyboard in Resources */,
 				1330B71A1A2105F600188FCF /* FullSample.storyboard in Resources */,
 				13EE02B41A1D17E1001470A3 /* schedule.storyboard in Resources */,
-				13F1E5631A144BF700EB08AA /* xhome.storyboard in Resources */,
 				13F1E5581A13F9A400EB08AA /* MuseoSans-300.otf in Resources */,
 				13369DB71A0D72F7000F9032 /* Images.xcassets in Resources */,
 				13A2F5F31A16A15D0057182D /* maps.storyboard in Resources */,
@@ -494,9 +763,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A58D151A2CD57F007AAA29 /* ServiceResponse.m in Sources */,
+				84A58D091A2CD321007AAA29 /* SeminarWheelItem.m in Sources */,
 				13A6333E1A21218000BE90FE /* CenterScreenSegue.swift in Sources */,
 				139072561A21371F00076152 /* TestViewController.swift in Sources */,
 				13A6333B1A211B6900BE90FE /* CenterViewController.swift in Sources */,
+				84A58D021A2CA94D007AAA29 /* ServicesManager.swift in Sources */,
 				13A2F5EB1A16936E0057182D /* ContentViewController.swift in Sources */,
 				13369DB21A0D72F7000F9032 /* ViewController.swift in Sources */,
 				139072631A21542100076152 /* HomeViewController.swift in Sources */,
@@ -504,6 +776,8 @@
 				13A1D5E51A12B8B600D110FB /* StringUtils.swift in Sources */,
 				13A2F5F51A16A1B70057182D /* MapsViewController.swift in Sources */,
 				1330B7171A20F87500188FCF /* FullViewController.swift in Sources */,
+				848C8BB31A2DD74500D78BD9 /* MenuManager.m in Sources */,
+				84A58D061A2CD260007AAA29 /* Seminar.m in Sources */,
 				13369DAD1A0D72F7000F9032 /* AppDelegate.swift in Sources */,
 				13369DB01A0D72F7000F9032 /* masterapp.xcdatamodeld in Sources */,
 				13F1E5611A143BE300EB08AA /* SegueUtils.swift in Sources */,
@@ -533,10 +807,25 @@
 			target = 13369DA61A0D72F7000F9032 /* masterapp */;
 			targetProxy = 13369DC01A0D72F7000F9032 /* PBXContainerItemProxy */;
 		};
-		FA4A84431A249F7900C9DD2D /* PBXTargetDependency */ = {
+		84A58CB41A2C83FB007AAA29 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Snappy;
-			targetProxy = FA4A84421A249F7900C9DD2D /* PBXContainerItemProxy */;
+			targetProxy = 84A58CB31A2C83FB007AAA29 /* PBXContainerItemProxy */;
+		};
+		84A58CC51A2C84AD007AAA29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Haneke;
+			targetProxy = 84A58CC41A2C84AD007AAA29 /* PBXContainerItemProxy */;
+		};
+		84A58CD21A2C85A8007AAA29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			targetProxy = 84A58CD11A2C85A8007AAA29 /* PBXContainerItemProxy */;
+		};
+		84A58CFB1A2C8D92007AAA29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = 84A58CFA1A2C8D92007AAA29 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -645,10 +934,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMPRESS_PNG_FILES = NO;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+				);
 				INFOPLIST_FILE = masterapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/masterapp-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -658,10 +957,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMPRESS_PNG_FILES = NO;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+				);
 				INFOPLIST_FILE = masterapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/masterapp-Bridging-Header.h";
 			};
 			name = Release;
 		};
