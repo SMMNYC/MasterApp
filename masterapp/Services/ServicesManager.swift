@@ -13,7 +13,7 @@ import Alamofire
 // Configuration constants:
 
 let kUserName = "admin"
-let kPassword = "111111"
+let kPassword = "Scimed123"
 let kBaseURL = "http://blueprint.scimeddev.com/"
 
 let kGetSeminarMethod = "Api/Seminar/GetSeminar"

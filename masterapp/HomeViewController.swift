@@ -27,23 +27,28 @@ class HomeViewController: ContenteViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let URL = NSURL(string: "http://www.scimedmedia.com/images/scimedmedia_logo.png")!
         iamgeHolder.hnk_setImageFromURL(URL)
         // Do any additional setup after loading the view.
-                
+        
+      
         ServicesManager.sharedManager()?.loadSeminar({ (success, object, responseData, error) -> Void in
             if (success)
             {
                 MenuManager.sharedManager().configureWithSeminar(object as Seminar);
             }
         })
-        
+        MenuManager.sharedManager()
+       
         ServicesManager.sharedManager()?.loadSeminar_alamofire({ (success, object, responseData, error) -> Void in
             if success
             {
                 MenuManager.sharedManager().configureWithSeminar(object as Seminar)
             }
-        })
+     })
+
+
     }
 
     override func didReceiveMemoryWarning() {
