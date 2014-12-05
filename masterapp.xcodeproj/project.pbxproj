@@ -34,6 +34,10 @@
 		13A6333B1A211B6900BE90FE /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A6333A1A211B6900BE90FE /* CenterViewController.swift */; };
 		13A6333E1A21218000BE90FE /* CenterScreenSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A6333D1A21218000BE90FE /* CenterScreenSegue.swift */; };
 		13A633401A2126AC00BE90FE /* CenterSample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A6333F1A2126AC00BE90FE /* CenterSample.storyboard */; };
+		13AD1E691A312393008D5FBF /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD1E681A312393008D5FBF /* SplashViewController.swift */; };
+		13AD1E721A3123AA008D5FBF /* LogonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD1E711A3123AA008D5FBF /* LogonViewController.swift */; };
+		13AD1E741A312958008D5FBF /* splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AD1E731A312958008D5FBF /* splash.storyboard */; };
+		13AD1E761A312D33008D5FBF /* HRJSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD1E751A312D33008D5FBF /* HRJSegue.swift */; };
 		13E33C1C1A1533B5007B413B /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13E33C1B1A1533B4007B413B /* profile.storyboard */; };
 		13EE02391A1C4FAB001470A3 /* ProfileKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EE02381A1C4FAB001470A3 /* ProfileKViewController.swift */; };
 		13EE023C1A1C694F001470A3 /* HJREmbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EE023B1A1C694F001470A3 /* HJREmbedView.swift */; };
@@ -235,6 +239,10 @@
 		13A6333A1A211B6900BE90FE /* CenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CenterViewController.swift; path = ../CenterViewController.swift; sourceTree = "<group>"; };
 		13A6333D1A21218000BE90FE /* CenterScreenSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterScreenSegue.swift; sourceTree = "<group>"; };
 		13A6333F1A2126AC00BE90FE /* CenterSample.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CenterSample.storyboard; sourceTree = "<group>"; };
+		13AD1E681A312393008D5FBF /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		13AD1E711A3123AA008D5FBF /* LogonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogonViewController.swift; sourceTree = "<group>"; };
+		13AD1E731A312958008D5FBF /* splash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = splash.storyboard; sourceTree = "<group>"; };
+		13AD1E751A312D33008D5FBF /* HRJSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HRJSegue.swift; sourceTree = "<group>"; };
 		13E33C1B1A1533B4007B413B /* profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
 		13EE02381A1C4FAB001470A3 /* ProfileKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileKViewController.swift; sourceTree = "<group>"; };
 		13EE023B1A1C694F001470A3 /* HJREmbedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HJREmbedView.swift; path = ../HJREmbedView.swift; sourceTree = "<group>"; };
@@ -322,6 +330,7 @@
 				1330B7181A2105AD00188FCF /* Samples */,
 				13EE02B31A1D17E1001470A3 /* schedule.storyboard */,
 				137115611A1C4C07008A71B9 /* Utility.storyboard */,
+				13AD1E731A312958008D5FBF /* splash.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -440,6 +449,8 @@
 				13EE02381A1C4FAB001470A3 /* ProfileKViewController.swift */,
 				1330B7161A20F87500188FCF /* FullViewController.swift */,
 				139072581A21379100076152 /* NewHomeViewController.swift */,
+				13AD1E681A312393008D5FBF /* SplashViewController.swift */,
+				13AD1E711A3123AA008D5FBF /* LogonViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -451,6 +462,7 @@
 				139B16091A12F4BB0014AF49 /* MasterSegue.swift */,
 				13A633371A210D0500BE90FE /* FullScreenSegue.swift */,
 				13A6333D1A21218000BE90FE /* CenterScreenSegue.swift */,
+				13AD1E751A312D33008D5FBF /* HRJSegue.swift */,
 			);
 			name = Segues;
 			sourceTree = "<group>";
@@ -740,6 +752,7 @@
 				13EE02AE1A1D1063001470A3 /* feed.storyboard in Resources */,
 				139072671A21552300076152 /* home.storyboard in Resources */,
 				13EE02A41A1D103E001470A3 /* learning.storyboard in Resources */,
+				13AD1E741A312958008D5FBF /* splash.storyboard in Resources */,
 				1330B71A1A2105F600188FCF /* FullSample.storyboard in Resources */,
 				13EE02B41A1D17E1001470A3 /* schedule.storyboard in Resources */,
 				13F1E5581A13F9A400EB08AA /* MuseoSans-300.otf in Resources */,
@@ -769,6 +782,8 @@
 				139072561A21371F00076152 /* TestViewController.swift in Sources */,
 				13A6333B1A211B6900BE90FE /* CenterViewController.swift in Sources */,
 				84A58D021A2CA94D007AAA29 /* ServicesManager.swift in Sources */,
+				13AD1E761A312D33008D5FBF /* HRJSegue.swift in Sources */,
+				13AD1E721A3123AA008D5FBF /* LogonViewController.swift in Sources */,
 				13A2F5EB1A16936E0057182D /* ContentViewController.swift in Sources */,
 				13369DB21A0D72F7000F9032 /* ViewController.swift in Sources */,
 				139072631A21542100076152 /* HomeViewController.swift in Sources */,
@@ -782,6 +797,7 @@
 				13369DB01A0D72F7000F9032 /* masterapp.xcdatamodeld in Sources */,
 				13F1E5611A143BE300EB08AA /* SegueUtils.swift in Sources */,
 				139072591A21379100076152 /* NewHomeViewController.swift in Sources */,
+				13AD1E691A312393008D5FBF /* SplashViewController.swift in Sources */,
 				13EE023C1A1C694F001470A3 /* HJREmbedView.swift in Sources */,
 				13A633381A210D0500BE90FE /* FullScreenSegue.swift in Sources */,
 				13A2F5E91A1688760057182D /* protocols.swift in Sources */,

@@ -22,14 +22,6 @@
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4mh-zf-Lab">
                                         <rect key="frame" x="-3" y="-5" width="607" height="605"/>
                                         <subviews>
-                                            <view clipsSubviews="YES" contentMode="center" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c1j-qg-c1q" customClass="HJREmbedView" customModule="masterapp" customModuleProvider="target">
-                                                <rect key="frame" x="23" y="123" width="304" height="303"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="storyboard" value="Utility"/>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="screen" value="entry"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
                                             <view clipsSubviews="YES" contentMode="center" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GIi-8H-I8V" customClass="HJREmbedView" customModule="masterapp" customModuleProvider="target">
                                                 <rect key="frame" x="361" y="77" width="216" height="215"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -50,6 +42,14 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="storyboard" value="Utility"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="screen" value="chart"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view clipsSubviews="YES" contentMode="center" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c1j-qg-c1q" customClass="HJREmbedView" customModule="masterapp" customModuleProvider="target">
+                                                <rect key="frame" x="23" y="123" width="304" height="303"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="storyboard" value="Utility"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="screen" value="entry"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
